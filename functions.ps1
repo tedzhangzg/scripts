@@ -2,7 +2,7 @@
 # Function References
 
 # To download and include
-# Invoke-Expression $($(Invoke-WebRequest "https://raw.githubusercontent.com/tedzhangzg/shellscripts/main/functions.ps1" -UseBasicParsing).Content)
+# Invoke-Expression $($(Invoke-WebRequest "https://raw.githubusercontent.com/tedzhangzg/scripts/main/functions.ps1" -UseBasicParsing).Content)
 
 
 
