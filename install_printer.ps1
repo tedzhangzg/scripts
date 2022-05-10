@@ -4,7 +4,7 @@
 # Include
 
 # Include functions.ps1 from GitHub
-Invoke-Expression $($(Invoke-WebRequest "https://raw.githubusercontent.com/tedzhangzg/shellscripts/main/functions.ps1" -UseBasicParsing).Content)
+Invoke-Expression $($(Invoke-WebRequest "https://raw.githubusercontent.com/tedzhangzg/scripts/main/functions.ps1" -UseBasicParsing).Content)
 
 
 "Starting installation ..."
