@@ -1,6 +1,6 @@
 #!/bin/sh
-
 # Functions
+
 # Download
 # curl -L -O "https://raw.githubusercontent.com/tedzhangzg/scripts/main/functions.sh"
 # dot sourced into all scripts
