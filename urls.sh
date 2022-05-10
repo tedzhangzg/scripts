@@ -1,7 +1,11 @@
 #!/bin/sh
 
-# Script
-# URL References
+# URL
+
+# Download
+# curl -L -O "https://raw.githubusercontent.com/tedzhangzg/scripts/main/urls.sh"
+# dot sourced into all scripts
+# source ./urls.sh
 
 # To download and include
 # wget -O - https://raw.githubusercontent.com/tedzhangzg/shellscripts/main/urls.sh | bash
