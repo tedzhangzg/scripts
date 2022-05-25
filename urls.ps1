@@ -31,6 +31,10 @@ $url_cppdb11x86 = "https://download.microsoft.com/download/3/B/C/3BC60F47-6A7C-4
 # C++ Runtime v12 framework package for Desktop Bridge (Project Centennial)
 $url_cppdb12x86 = "https://download.microsoft.com/download/2/1/F/21F05B77-C444-46C0-B357-7EBC78C95CE2/vc_uwpdesktop.120.exe"
 
+# Windows Terminal
+$url_wintermw11 = "https://github.com/microsoft/terminal/releases/download/v1.13.11431.0/Microsoft.WindowsTerminal_Win11_1.13.11432.0_8wekyb3d8bbwe.msixbundle"
+$url_wintermw10 = "https://github.com/microsoft/terminal/releases/download/v1.13.11431.0/Microsoft.WindowsTerminal_Win10_1.13.11431.0_8wekyb3d8bbwe.msixbundle"
+
 # Linux kernel update package x64
 $url_wsl2kernel = "https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi"
 
