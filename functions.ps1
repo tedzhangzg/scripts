@@ -121,27 +121,29 @@ Function Instal-Winge() {
     }
     
     
-    # Microsoft Store
+    # C++ Desktop Bridge 14
 
     # Param
-    $dir_installer = "AddMSStore"
+    $dir_installer = "VCPP_CPPDB14x86"
     $install_args = ""
-
     # Download
     if (-Not (Test-Path -Path $dir_installer)) {
-        $url = $url_addmsstore
+        $url = $url_cppdb14x86
         Downloa-Ap $url $dir_installer
     }
-    
-    # Expand
-    Get-ChildItem -Path $dir_installer -Recurse -Filter *.zip | % { Expand-Archive -Path $_.FullName -DestinationPath $dir_installer -Force }
-    Get-ChildItem -Path $dir_installer -Recurse -Filter *.zip | % { Remove-Item -Path $_.FullName -Recurse -Force }
-
     # Install
-    # Only the C++ Runtime Desktop Bridge
-    Get-ChildItem -Path $dir_installer -Recurse -Filter "*vclibs*" | % { Add-AppxPackage -Path $_.FullName }
-    # Full Microsoft Store
-    # Get-ChildItem -Path $dir_installer -Recurse -Filter *.cmd | % { Start-Process -FilePath $_.FullName -Wait }
+    Instal-Ap $dir_installer $install_args
+    
+    # Param
+    $dir_installer = "VCPP_CPPDB14x64"
+    $install_args = ""
+    # Download
+    if (-Not (Test-Path -Path $dir_installer)) {
+        $url = $url_cppdb14x64
+        Downloa-Ap $url $dir_installer
+    }
+    # Install
+    Instal-Ap $dir_installer $install_args
     
     
     # NuGet
