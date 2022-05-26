@@ -11,7 +11,7 @@ Function Clear-PSHistory() {
     if (Test-Path -Path (Get-PSReadlineOption).HistorySavePath) {
         Remove-Item -Path $(Split-Path -Path (Get-PSReadlineOption).HistorySavePath -Parent) -Recurse
     }
-    "Powershell history cleared."
+    Write-Host "Powershell history cleared."
 }
 # To use,
 # Just call function
@@ -53,7 +53,7 @@ Function Get-URL-FromWinget($app_wgname) {
 # Install App
 # Given folder with one installer file only
 Function Instal-Ap($dir_installer, $install_args) {
-    "Installing $dir_installer ..."
+    Write-Host "Installing $dir_installer ..."
     
     # Set var for this use
     # $installer_fileext = ""
@@ -77,7 +77,7 @@ Function Instal-Ap($dir_installer, $install_args) {
     # Get-ChildItem -Path $dir_installer -Recurse -Filter *.$installer_fileext | % { Start-Process -FilePath $_.FullName -ArgumentList $install_args -Wait }
     # Get-ChildItem -Path $dir_installer -Recurse -Filter *.$installer_fileext | % { Add-AppxPackage -Path $_.FullName }
 
-    "... Done Installing"
+    Write-Host "... Done Installing"
 }
 # To use,
 # Provide $dir_installer $install_args
@@ -88,7 +88,7 @@ Function Instal-Ap($dir_installer, $install_args) {
 # Download App
 # Given some apps are not on winget
 Function Downloa-Ap($url, $dir_installer) {
-    "Downloading $dir_installer ...."
+    Write-Host "Downloading $dir_installer ...."
 
     # Create new folder
     if (-Not (Test-Path -Path $dir_installer)) {
@@ -102,7 +102,7 @@ Function Downloa-Ap($url, $dir_installer) {
     curl.exe -L -O $url
     Pop-Location
 
-    "... Done Downloading"
+    Write-Host "... Done Downloading"
 }
 # To use,
 # Provide $url $dir_installer
