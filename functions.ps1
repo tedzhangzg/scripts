@@ -113,39 +113,64 @@ Function Downloa-Ap($url, $dir_installer) {
 # Check and Install WinGet
 Function Instal-Winge() {
     
-    # Go to working directory
-    # Push-Location -Path $HOME\Downloads
+    # Initial Location
+    $to_pop_location = 0
+    if ([string]$(Get-Location) -eq "C:\Windows\system32") {
+        Push-Location -Path $HOME\Downloads
+        $to_pop_location = 1
+    }
     
-    # C++ Desktop Bridge 14 x86
-    $dir_installer = "VCPP_CPPDB14x86"
+    
+    # Microsoft Store
+
+    # Param
+    $dir_installer = "AddMSStore"
     $install_args = ""
+
+    # Download
     if (-Not (Test-Path -Path $dir_installer)) {
-        $url = $url_cppdb14x86
+        $url = $url_addmsstore
         Downloa-Ap $url $dir_installer
     }
-    Instal-Ap $dir_installer $install_args
     
-    # C++ Desktop Bridge 14 x64
-    $dir_installer = "VCPP_CPPDB14x64"
-    $install_args = ""
-    if (-Not (Test-Path -Path $dir_installer)) {
-        $url = $url_cppdb14x64
-        Downloa-Ap $url $dir_installer
-    }
-    Instal-Ap $dir_installer $install_args
+    # Expand
+    Get-ChildItem -Path $dir_installer -Recurse -Filter *.zip | % { Expand-Archive -Path $_.FullName -DestinationPath $dir_installer -Force }
+    Get-ChildItem -Path $dir_installer -Recurse -Filter *.zip | % { Remove-Item -Path $_.FullName -Recurse -Force }
+
+    # Install
+    # Only the C++ Runtime Desktop Bridge
+    Get-ChildItem -Path $dir_installer -Recurse -Filter "*vclibs*" | % { Start-Process -FilePath $_.FullName -Wait }
+    # Full Microsoft Store
+    # Get-ChildItem -Path $dir_installer -Recurse -Filter *.cmd | % { Start-Process -FilePath $_.FullName -Wait }
     
+    
+    # NuGet
+
+    Install-PackageProvider -Name "NuGet" -Force | Out-Null
+    Register-PackageSource -Name "nuget.org" -Location "https://www.nuget.org/api/v2" -ProviderName "NuGet" -Force | Out-Null
+    Install-Package "Microsoft.UI.Xaml" -Force | Out-Null
+
+
     # WinGet
+
+    # Param
     $dir_installer = "WinGet"
     $install_args = ""
+
+    # Download
     if (-Not (Test-Path -Path $dir_installer)) {
         $url = $url_winget
         Downloa-Ap $url $dir_installer
     }
     Instal-Ap $dir_installer $install_args
     
-    # Return to previous directory
-    # Pop-Location
     
+    # Return to previous location
+    if ($to_pop_location -eq 1) {
+        Pop-Location
+        $to_pop_location = 0
+    }
+
 }
 # To use,
 # Just call function
