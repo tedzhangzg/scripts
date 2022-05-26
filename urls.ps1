@@ -6,6 +6,9 @@
 
 
 
+# Script to Add Microsoft Store
+$url_addmsstore = "https://github.com/kkkgo/LTSC-Add-MicrosoftStore/archive/refs/heads/master.zip"
+
 # C++ Runtime framework packages for Desktop Bridge
 $url_cppdb14x86 = "https://aka.ms/Microsoft.VCLibs.x86.14.00.Desktop.appx"
 $url_cppdb14x64 = "https://aka.ms/Microsoft.VCLibs.x64.14.00.Desktop.appx"
