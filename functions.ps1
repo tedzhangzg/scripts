@@ -139,7 +139,7 @@ Function Instal-Winge() {
 
     # Install
     # Only the C++ Runtime Desktop Bridge
-    Get-ChildItem -Path $dir_installer -Recurse -Filter "*vclibs*" | % { Start-Process -FilePath $_.FullName -Wait }
+    Get-ChildItem -Path $dir_installer -Recurse -Filter "*vclibs*" | % { Add-AppxPackage -Path $_.FullName }
     # Full Microsoft Store
     # Get-ChildItem -Path $dir_installer -Recurse -Filter *.cmd | % { Start-Process -FilePath $_.FullName -Wait }
     
