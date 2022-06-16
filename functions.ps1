@@ -19,10 +19,28 @@ Function Clear-PSHistory() {
 
 
 # Check Windows 11
-$running_Win11 = [System.Environment]::OSVersion.Version.Build -ge 20000
+$running_Win11 = [System.Environment]::OSVersion.Version.Build -ge 22000
 # Windows 10 21H1 has Build 19043
 # To use,
 # Just call function
+
+
+
+# Temp Folder for Downloading and Installing
+# Create Temp Folder
+Function Creat-TempFolde() {
+    $tmp_dir = "$env:TEMP\tempappdlinst"
+    if (Test-Path -Path $tmp_dir) {
+        Remove-Item -Path $tmp_dir -Recurse -Force
+    }
+    New-Item -ItemType "directory" -Path $tmp_dir | Out-Null
+}
+# Remove Temp Folder
+Function Remov-TempFolde() {
+    if (Test-Path -Path $tmp_dir) {
+        Remove-Item -Path $tmp_dir -Recurse -Force
+    }
+}
 
 
 
