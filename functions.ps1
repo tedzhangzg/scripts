@@ -18,6 +18,16 @@ Function Clear-PSHistory() {
 
 
 
+# Clear Windows Defender History
+Function Clear-WinDefHist() {
+    Set-MpPreference -ScanPurgeItemsAfterDelay 1
+    Get-ChildItem -Path "$env:ProgramData\Microsoft\Windows Defender\Scans\History\Service" -Recurse | Remove-Item -Recurse -Force
+}
+# To use,
+# Just call function
+
+
+
 # Check Windows 11
 $running_Win11 = [System.Environment]::OSVersion.Version.Build -ge 22000
 # Windows 10 21H1 has Build 19043
