@@ -36,7 +36,24 @@ $running_Win11 = [System.Environment]::OSVersion.Version.Build -ge 22000
 
 
 
-# Temp Folder for Downloading and Installing
+# Create Folder, preventing error if exist
+# Used especially for temp downloads
+Function Creat-Folde($path_folder) {
+    if (Test-Path -Path $path_folder) {
+        Remove-Item -Path $path_folder -Recurse -Force
+    }
+    New-Item -ItemType "directory" -Path $path_folder | Out-Null
+}
+# Remove Folder recursively, preventing error if not exist
+Function Remov-Folde($path_folder) {
+    if (Test-Path -Path $path_folder) {
+        Remove-Item -Path $path_folder -Recurse -Force
+    }
+}
+# To use,
+# Just call function
+
+# Old
 # Create Temp Folder
 Function Creat-TempFolde() {
     $tmp_dir = "$env:TEMP\tempappdlinst"
