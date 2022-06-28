@@ -53,22 +53,6 @@ Function Remov-Folde($path_folder) {
 # To use,
 # Just call function
 
-# Old
-# Create Temp Folder
-Function Creat-TempFolde() {
-    $tmp_dir = "$env:TEMP\tempappdlinst"
-    if (Test-Path -Path $tmp_dir) {
-        Remove-Item -Path $tmp_dir -Recurse -Force
-    }
-    New-Item -ItemType "directory" -Path $tmp_dir | Out-Null
-}
-# Remove Temp Folder
-Function Remov-TempFolde() {
-    if (Test-Path -Path $tmp_dir) {
-        Remove-Item -Path $tmp_dir -Recurse -Force
-    }
-}
-
 
 
 # Get URL from winget
