@@ -33,6 +33,10 @@ Function Is-Win11() {
     return ([System.Environment]::OSVersion.Version.Build -ge 22000)
 }
 # Notes
+# [System.Environment]::OSVersion.Version.Major
+# [System.Environment]::OSVersion.Version.Minor
+# [System.Environment]::OSVersion.Version.Build
+# Versions
 # Windows Server 2022: Major 10, Build 20348
 # Windows Server 2019: Major 10, Build 17763
 # Windows Server 2016: Major 10, Build 14393
@@ -50,6 +54,9 @@ Function Is-Win11() {
 # Windows 10 1607: Major 10, Build 14393
 # Windows 10 1511: Major 10, Build 10586
 # Windows 10 1507: Major 10, Build 10240
+# Check if Server or Desktop
+# (Get-CimInstance -ClassName "Win32_OperatingSystem").ProductType
+# (Get-WmiObject -Class "Win32_OperatingSystem").ProductType
 # To use,
 # Just call function
 
