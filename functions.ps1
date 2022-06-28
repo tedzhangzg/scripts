@@ -29,8 +29,27 @@ Function Clear-WinDefHist() {
 
 
 # Check Windows 11
-$running_Win11 = [System.Environment]::OSVersion.Version.Build -ge 22000
-# Windows 10 21H1 has Build 19043
+Function Is-Win11() {
+    return ([System.Environment]::OSVersion.Version.Build -ge 22000)
+}
+# Notes
+# Windows Server 2022: Major 10, Build 20348
+# Windows Server 2019: Major 10, Build 17763
+# Windows Server 2016: Major 10, Build 14393
+# Windows 11 21H2: Major 10, Build 22000
+# Windows 10 21H2: Major 10, Build 19044
+# Windows 10 21H1: Major 10, Build 19043
+# Windows 10 20H2: Major 10, Build 19042
+# Windows 10 2004: Major 10, Build 19041
+# Windows 10 1909: Major 10, Build 18363
+# Windows 10 1903: Major 10, Build 18362
+# Windows 10 1809: Major 10, Build 17763
+# Windows 10 1803: Major 10, Build 17134
+# Windows 10 1709: Major 10, Build 16299
+# Windows 10 1703: Major 10, Build 15063
+# Windows 10 1607: Major 10, Build 14393
+# Windows 10 1511: Major 10, Build 10586
+# Windows 10 1507: Major 10, Build 10240
 # To use,
 # Just call function
 
@@ -51,7 +70,9 @@ Function Remov-Folde($path_folder) {
     }
 }
 # To use,
-# Just call function
+# Provide $path_folder
+# Creat-Folde $path_folder
+# Remov-Folde $path_folder
 
 
 
@@ -84,9 +105,6 @@ Function Get-URL-FromWinget($app_wgname) {
 Function Instal-Ap($dir_installer, $install_args) {
     Write-Host "Installing $dir_installer ..."
     
-    # Set var for this use
-    # $installer_fileext = ""
-
     # Get installer file extension if null
     if ($null -eq $installer_fileext) {
         $installer_fileext = (Get-ChildItem -Path $dir_installer).Extension.Substring(1)
@@ -98,15 +116,16 @@ Function Instal-Ap($dir_installer, $install_args) {
     } elseif ( ($installer_fileext -like "app*") -or ($installer_fileext -like "msix*") ) {
         Invoke-Expression "Get-ChildItem -Path `$dir_installer -Recurse -Filter *.`$installer_fileext | % { Add-AppxPackage -Path `$_.FullName }"
     }
-
+    
     # Clear var for next use
     Remove-Variable installer_fileext
-
-    # Commands inside Invoke Expression
+    
+    # Notes
+    # Full commands that Invoke Expression actually do
     # Get-ChildItem -Path $dir_installer -Recurse -Filter *.$installer_fileext | % { Start-Process -FilePath $_.FullName -ArgumentList $install_args -Wait }
     # Get-ChildItem -Path $dir_installer -Recurse -Filter *.$installer_fileext | % { Add-AppxPackage -Path $_.FullName }
 
-    Write-Host "... Done Installing"
+    Write-Host "... Done Installing $dir_installer"
 }
 # To use,
 # Provide $dir_installer $install_args
@@ -120,18 +139,14 @@ Function Downloa-Ap($url, $dir_installer) {
     Write-Host "Downloading $dir_installer ...."
 
     # Create new folder
-    if (-Not (Test-Path -Path $dir_installer)) {
-        New-Item -ItemType "directory" -Path $dir_installer | Out-Null
-    } else {
-        Get-ChildItem -Path $dir_installer -Recurse | Remove-Item -Recurse
-    }
-
+    Creat-Folde $dir_installer
+    
     # Download
     Push-Location -Path $dir_installer
     curl.exe -L -O $url
     Pop-Location
 
-    Write-Host "... Done Downloading"
+    Write-Host "... Done Downloading $dir_installer"
 }
 # To use,
 # Provide $url $dir_installer
