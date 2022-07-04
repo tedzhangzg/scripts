@@ -68,7 +68,7 @@ Function Creat-Folde($path_folder) {
     if (Test-Path -Path $path_folder) {
         Remove-Item -Path $path_folder -Recurse -Force
     }
-    New-Item -ItemType "directory" -Path $path_folder | Out-Null
+    New-Item -ItemType "directory" -Path $path_folder -Force | Out-Null
 }
 # Remove Folder recursively, preventing error if not exist
 Function Remov-Folde($path_folder) {
