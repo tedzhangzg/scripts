@@ -56,7 +56,7 @@ $url_googledrive = "https://dl.google.com/drive-file-stream/GoogleDriveSetup.exe
 $url_teamviewer = "https://download.teamviewer.com/download/version_13x/TeamViewerQS.exe"
 
 # Java 8 Runtime x86
-$url_java8x86 = "https://javadl.oracle.com/webapps/download/GetFile/1.8.0_331-b09/165374ff4ea84ef0bbd821706e29b123/windows-i586/jre-8u331-windows-i586.exe"
+$url_java8x86 = "https://javadl.oracle.com/webapps/download/GetFile/1.8.0_341-b10/424b9da4b48848379167015dcc250d8d/windows-i586/jre-8u341-windows-i586.exe"
 
 # Java 10 Runtime
 $url_java10 = "https://javadl.oracle.com/webapps/download/GetFile/10.0.2+13/19aef61b38124481863b1413dce1855f/windows-i586/jre-10.0.2_windows-x64_bin.exe"
