@@ -61,6 +61,12 @@ $url_java8x86 = "https://javadl.oracle.com/webapps/download/GetFile/1.8.0_341-b1
 # Java 10 Runtime
 $url_java10 = "https://javadl.oracle.com/webapps/download/GetFile/10.0.2+13/19aef61b38124481863b1413dce1855f/windows-i586/jre-10.0.2_windows-x64_bin.exe"
 
+# Java 11 JDK
+$url_java11 = ""
+
+# Java 17 JDK
+$url_java17 = "https://download.oracle.com/java/17/latest/jdk-17_windows-x64_bin.exe"
+
 # Office 2013 ODT
 $url_odt2013 = "https://download.microsoft.com/download/6/2/3/6230F7A2-D8A9-478B-AC5C-57091B632FCF/officedeploymenttool_x86_5031-1000.exe"
 
