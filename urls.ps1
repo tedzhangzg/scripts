@@ -72,7 +72,7 @@ $url_odt2013 = "https://download.microsoft.com/download/6/2/3/6230F7A2-D8A9-478B
 
 # KMS
 $url_convr2v = "https://github.com/abbodi1406/C2R-R2V-AIO/archive/refs/heads/master.zip"
-$url_micactscr = "https://raw.githubusercontent.com/massgravel/Microsoft-Activation-Scripts/master/MAS/All-In-One-Version/MAS_1.5_AIO_CRC32_21D20776.cmd"
+$url_micactscr = "https://raw.githubusercontent.com/massgravel/Microsoft-Activation-Scripts/master/MAS/All-In-One-Version/MAS_AIO.cmd"
 
 
 
