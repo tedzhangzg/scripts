@@ -71,9 +71,8 @@ $url_java17 = "https://download.oracle.com/java/17/latest/jdk-17_windows-x64_bin
 $url_odt2013 = "https://download.microsoft.com/download/6/2/3/6230F7A2-D8A9-478B-AC5C-57091B632FCF/officedeploymenttool_x86_5031-1000.exe"
 
 # KMS
-$url_convr2v = "https://github.com/abbodi1406/C2R-R2V-AIO/archive/refs/heads/master.zip"
+$url_convr2v = "https://raw.githubusercontent.com/abbodi1406/C2R-R2V-AIO/master/C2R-R2V-AIO.cmd"
 $url_micactscr = "https://raw.githubusercontent.com/massgravel/Microsoft-Activation-Scripts/master/MAS/All-In-One-Version/MAS_AIO.cmd"
-
 
 
 
