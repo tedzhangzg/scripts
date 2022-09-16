@@ -39,6 +39,9 @@ $url_cppdb12x86 = "https://download.microsoft.com/download/2/1/F/21F05B77-C444-4
 # Linux kernel update package x64
 $url_wsl2kernel = "https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi"
 
+# Skype MSI
+$url_skypemsi = "http://go.skype.com/msi-download"
+
 # Windows Essentials 2012
 $url_winessen = "https://archive.org/download/wlsetup-all_201802/wlsetup-all.exe"
 
