@@ -21,6 +21,9 @@ $url_winget = "https://github.com/microsoft/winget-cli/releases/download/v1.3.20
 # $url_winget = "https://github.com/microsoft/winget-cli/releases/download/v1.0.11692/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle"
 # $url_winget = "https://github.com/microsoft/winget-cli/releases/download/v1.0.11451/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle"
 
+# Microsoft .NET Framework 4.8.1
+$url_dotnetfw481 = "https://go.microsoft.com/fwlink/?linkid=2203305"
+
 # Microsoft .NET Framework 1.1
 $url_dotnetfw11rtm = "https://raw.githubusercontent.com/not001praween001/stockMN-exe/master/stockMN_1.3.1/dotnetfx.exe"
 $url_dotnetfw11sp1 = "https://download.microsoft.com/download/8/b/4/8b4addd8-e957-4dea-bdb8-c4e00af5b94b/NDP1.1sp1-KB867460-X86.exe"
