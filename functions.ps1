@@ -64,7 +64,7 @@ Function Is-Win11() {
 
 # Create Folder, preventing error if exist
 # Used especially for temp downloads
-Function Creat-Folde($path_folder) {
+Function Creat-NewEmpty-Folde($path_folder) {
     if (Test-Path -Path $path_folder) {
         Remove-Item -Path $path_folder -Recurse -Force
     }
@@ -78,7 +78,7 @@ Function Remov-Folde($path_folder) {
 }
 # To use,
 # Provide $path_folder
-# Creat-Folde $path_folder
+# Creat-NewEmpty-Folde $path_folder
 # Remov-Folde $path_folder
 
 
@@ -146,7 +146,7 @@ Function Downloa-Ap($url, $dir_installer) {
     Write-Host "Downloading $dir_installer ...."
 
     # Create new folder
-    Creat-Folde $dir_installer
+    Creat-NewEmpty-Folde $dir_installer
     
     # Download
     Push-Location -Path $dir_installer
