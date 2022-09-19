@@ -62,27 +62,6 @@ Function Is-Win11() {
 
 
 
-# Create Folder, preventing error if exist
-# Used especially for temp downloads
-Function Creat-NewEmpty-Folde($path_folder) {
-    if (Test-Path -Path $path_folder) {
-        Remove-Item -Path $path_folder -Recurse -Force
-    }
-    New-Item -ItemType "directory" -Path $path_folder -Force | Out-Null
-}
-# Remove Folder recursively, preventing error if not exist
-Function Remov-Folde($path_folder) {
-    if (Test-Path -Path $path_folder) {
-        Remove-Item -Path $path_folder -Recurse -Force
-    }
-}
-# To use,
-# Provide $path_folder
-# Creat-NewEmpty-Folde $path_folder
-# Remov-Folde $path_folder
-
-
-
 # Get URL from winget
 # Useful for manual install or when hash isn't updated in manifest
 Function Get-URL-FromWinget($app_wgname) {
@@ -104,6 +83,51 @@ Function Get-URL-FromWinget($app_wgname) {
 # To use,
 # Provide $app_wgname
 # Get-URL-FromWinget $app_wgname
+
+
+
+# Remove Folder recursively, preventing error if not exist
+Function Remov-Folde($path_folder) {
+    if (Test-Path -Path $path_folder) {
+        Get-Item -Path $path_folder | Remove-Item -Recurse -Force
+    }
+}
+# To use,
+# Provide $path_folder
+# Remov-Folde $path_folder
+
+
+
+# Create Folder, preventing error if exist
+# Used especially for temp downloads
+Function Creat-NewEmpty-Folde($path_folder) {
+    Remov-Folde $path_folder
+    New-Item -ItemType "directory" -Path $path_folder -Force | Out-Null
+}
+# To use,
+# Provide $path_folder
+# Creat-NewEmpty-Folde $path_folder
+
+
+
+# Download App
+# Given some apps are not on winget
+Function Downloa-Ap($url, $dir_installer) {
+    Write-Host "Downloading $dir_installer ...."
+
+    # Create new folder
+    Creat-NewEmpty-Folde $dir_installer
+    
+    # Download
+    Push-Location -Path $dir_installer
+    curl.exe -L -O $url
+    Pop-Location
+
+    Write-Host "... Done Downloading $dir_installer"
+}
+# To use,
+# Provide $url $dir_installer
+# Downloa-Ap $url $dir_installer
 
 
 
@@ -137,27 +161,6 @@ Function Instal-Ap($dir_installer, $install_args) {
 # To use,
 # Provide $dir_installer $install_args
 # Instal-Ap $dir_installer $install_args
-
-
-
-# Download App
-# Given some apps are not on winget
-Function Downloa-Ap($url, $dir_installer) {
-    Write-Host "Downloading $dir_installer ...."
-
-    # Create new folder
-    Creat-NewEmpty-Folde $dir_installer
-    
-    # Download
-    Push-Location -Path $dir_installer
-    curl.exe -L -O $url
-    Pop-Location
-
-    Write-Host "... Done Downloading $dir_installer"
-}
-# To use,
-# Provide $url $dir_installer
-# Downloa-Ap $url $dir_installer
 
 
 
