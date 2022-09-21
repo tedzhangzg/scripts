@@ -58,6 +58,9 @@ url_microsoft_office="https://go.microsoft.com/fwlink/p/?linkid=525133"
 url_microsoft_office_2019_1643="https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.43.20110804_Installer.pkg"
 url_microsoft_office_2016="https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.16.20101200_Installer.pkg"
 url_microsoft_office_2011=""
+# Links forwarded to downloads
+# url_office2019="https://go.microsoft.com/fwlink/?linkid=525133"
+# url_office2016="https://go.microsoft.com/fwlink/?linkid=871743"
 
 # Dropbox
 url_dropbox="https://www.dropbox.com/download?plat=mac&full=1"
