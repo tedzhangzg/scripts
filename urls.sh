@@ -61,7 +61,8 @@ url_microsoft_office_16_1665="https://officecdn.microsoft.com/pr/C1297A47-86C4-4
 url_microsoft_office_16_1654="https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.54.21101001_Installer.pkg"
 # last version for macOS 10.13
 url_microsoft_office_2019_1643="https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.43.20110804_Installer.pkg"
-
+# last version for macOS 10.12
+url_microsoft_office_2019_1629="https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.29.19090802_Installer.pkg"
 # last version for macOS 10.11
 url_microsoft_office_2016="https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.16.20101200_Installer.pkg"
 url_microsoft_office_2011=""
