@@ -28,7 +28,9 @@ $url_dotnetfw481 = "https://go.microsoft.com/fwlink/?linkid=2203305"
 $url_dotnetfw11rtm = "https://raw.githubusercontent.com/not001praween001/stockMN-exe/master/stockMN_1.3.1/dotnetfx.exe"
 $url_dotnetfw11sp1 = "https://download.microsoft.com/download/8/b/4/8b4addd8-e957-4dea-bdb8-c4e00af5b94b/NDP1.1sp1-KB867460-X86.exe"
 
-# Visual C++ Redistributable x86
+# Visual C++ Redistributable
+$url_vcpp2005x86 = "https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x86.EXE"
+$url_vcpp2005x64 = "https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x64.EXE"
 $url_vcpp2013x86 = "https://aka.ms/highdpimfc2013x86enu"
 $url_vcppLatestx86 = "https://aka.ms/vs/17/release/vc_redist.x86.exe"
 $url_vcppLatestx64 = "https://aka.ms/vs/17/release/vc_redist.x64.exe"
