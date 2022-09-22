@@ -40,6 +40,7 @@ Function Is-Win11() {
 # Windows Server 2022: Major 10, Build 20348
 # Windows Server 2019: Major 10, Build 17763
 # Windows Server 2016: Major 10, Build 14393
+# Windows 11 22H2: Major 10, Build 22621
 # Windows 11 21H2: Major 10, Build 22000
 # Windows 10 21H2: Major 10, Build 19044
 # Windows 10 21H1: Major 10, Build 19043
