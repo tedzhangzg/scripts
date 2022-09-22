@@ -40,6 +40,16 @@ Function Is-Win11() {
 # Windows Server 2022: Major 10, Minor 0, Build 20348
 # Windows Server 2019: Major 10, Minor 0, Build 17763
 # Windows Server 2016: Major 10, Minor 0, Build 14393
+# Windows Server 2012 R2: Major 6, Minor 3, Build 9600
+# Windows Server 2012: Major 6, Minor 2, Build 9200
+# Windows Server 2008 R2 SP1: Major 6, Minor 1, Build 7601
+# Windows Server 2008 R2: Major 6, Minor 1, Build 7600
+# Windows Server 2008 SP2 Update Rollup: Major 6, Minor 0, Build 6003
+# Windows Server 2008 SP2: Major 6, Minor 0, Build 6002
+# Windows Server 2008: Major 6, Minor 0, Build 6001
+# Windows Server 2003 R2: Major 5, Minor 2, Build 3790
+# Windows Server 2003 SP2: Major 5, Minor 2, Build 3790
+# Windows Server 2000: Major 5, Minor 0, Build 2195
 # Windows 11 22H2: Major 10, Minor 0, Build 22621
 # Windows 11 21H2: Major 10, Minor 0, Build 22000
 # Windows 10 22H2: Major 10, Minor 0, Build 19045
@@ -64,6 +74,8 @@ Function Is-Win11() {
 # Windows Vista SP2: Major 6, Minor 0, Build 6002
 # Windows Vista SP1: Major 6, Minor 0, Build 6001
 # Windows Vista: Major 6, Minor 0, Build 6000
+# Windows XP SP3: Major 5, Minor 1, Build 2600
+# Windows 2000 SP4: Major 5, Minor 0, Build 2195
 # Check if Server or Desktop
 # (Get-CimInstance -ClassName "Win32_OperatingSystem").ProductType
 # (Get-WmiObject -Class "Win32_OperatingSystem").ProductType
