@@ -43,10 +43,6 @@ $url_vcppLatestx86 = "https://aka.ms/vs/17/release/vc_redist.x86.exe"
 $url_vcppLatestx64 = "https://aka.ms/vs/17/release/vc_redist.x64.exe"
 $url_vcppLatesta64 = "https://aka.ms/vs/17/release/vc_redist.arm64.exe"
 
-$url_vcpp2013x86 = "https://aka.ms/highdpimfc2013x86enu"
-$url_vcppLatestx86 = "https://aka.ms/vs/17/release/vc_redist.x86.exe"
-$url_vcppLatestx64 = "https://aka.ms/vs/17/release/vc_redist.x64.exe"
-
 # C++ Runtime v11.0 framework package for Desktop Bridge (Project Centennial)
 $url_cppdb11x86 = "https://download.microsoft.com/download/3/B/C/3BC60F47-6A7C-4D46-8CFB-C2E746EF336E/vc_uwpdesktop.110.exe"
 
