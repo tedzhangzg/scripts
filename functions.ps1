@@ -37,24 +37,33 @@ Function Is-Win11() {
 # [System.Environment]::OSVersion.Version.Minor
 # [System.Environment]::OSVersion.Version.Build
 # Versions
-# Windows Server 2022: Major 10, Build 20348
-# Windows Server 2019: Major 10, Build 17763
-# Windows Server 2016: Major 10, Build 14393
-# Windows 11 22H2: Major 10, Build 22621
-# Windows 11 21H2: Major 10, Build 22000
-# Windows 10 21H2: Major 10, Build 19044
-# Windows 10 21H1: Major 10, Build 19043
-# Windows 10 20H2: Major 10, Build 19042
-# Windows 10 2004: Major 10, Build 19041
-# Windows 10 1909: Major 10, Build 18363
-# Windows 10 1903: Major 10, Build 18362
-# Windows 10 1809: Major 10, Build 17763
-# Windows 10 1803: Major 10, Build 17134
-# Windows 10 1709: Major 10, Build 16299
-# Windows 10 1703: Major 10, Build 15063
-# Windows 10 1607: Major 10, Build 14393
-# Windows 10 1511: Major 10, Build 10586
-# Windows 10 1507: Major 10, Build 10240
+# Windows Server 2022: Major 10, Minor 0, Build 20348
+# Windows Server 2019: Major 10, Minor 0, Build 17763
+# Windows Server 2016: Major 10, Minor 0, Build 14393
+# Windows 11 22H2: Major 10, Minor 0, Build 22621
+# Windows 11 21H2: Major 10, Minor 0, Build 22000
+# Windows 10 22H2: Major 10, Minor 0, Build 19045
+# Windows 10 21H2: Major 10, Minor 0, Build 19044
+# Windows 10 21H1: Major 10, Minor 0, Build 19043
+# Windows 10 20H2: Major 10, Minor 0, Build 19042
+# Windows 10 2004: Major 10, Minor 0, Build 19041
+# Windows 10 1909: Major 10, Minor 0, Build 18363
+# Windows 10 1903: Major 10, Minor 0, Build 18362
+# Windows 10 1809: Major 10, Minor 0, Build 17763
+# Windows 10 1803: Major 10, Minor 0, Build 17134
+# Windows 10 1709: Major 10, Minor 0, Build 16299
+# Windows 10 1703: Major 10, Minor 0, Build 15063
+# Windows 10 1607: Major 10, Minor 0, Build 14393
+# Windows 10 1511: Major 10, Minor 0, Build 10586
+# Windows 10 1507: Major 10, Minor 0, Build 10240
+# Windows 8.1 Update: Major 6, Minor 3, Build 9600
+# Windows 8.1: Major 6, Minor 3, Build 9200
+# Windows 8: Major 6, Minor 2, Build 9200
+# Windows 7 SP1: Major 6, Minor 1, Build 7601
+# Windows 7: Major 6, Minor 1, Build 7600
+# Windows Vista SP2: Major 6, Minor 0, Build 6002
+# Windows Vista SP1: Major 6, Minor 0, Build 6001
+# Windows Vista: Major 6, Minor 0, Build 6000
 # Check if Server or Desktop
 # (Get-CimInstance -ClassName "Win32_OperatingSystem").ProductType
 # (Get-WmiObject -Class "Win32_OperatingSystem").ProductType
