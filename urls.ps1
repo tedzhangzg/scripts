@@ -31,6 +31,18 @@ $url_dotnetfw11sp1 = "https://download.microsoft.com/download/8/b/4/8b4addd8-e95
 # Visual C++ Redistributable
 $url_vcpp2005x86 = "https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x86.EXE"
 $url_vcpp2005x64 = "https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x64.EXE"
+$url_vcpp2008x86 = "https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x86.exe"
+$url_vcpp2008x64 = "https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x64.exe"
+$url_vcpp2010x86 = "https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x86.exe"
+$url_vcpp2010x64 = "https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x64.exe"
+$url_vcpp2012x86 = "https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x86.exe"
+$url_vcpp2012x64 = "https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x64.exe"
+$url_vcpp2013x86 = "https://aka.ms/highdpimfc2013x86enu"
+$url_vcpp2013x64 = "https://aka.ms/highdpimfc2013x64enu"
+$url_vcppLatestx86 = "https://aka.ms/vs/17/release/vc_redist.x86.exe"
+$url_vcppLatestx64 = "https://aka.ms/vs/17/release/vc_redist.x64.exe"
+$url_vcppLatesta64 = "https://aka.ms/vs/17/release/vc_redist.arm64.exe"
+
 $url_vcpp2013x86 = "https://aka.ms/highdpimfc2013x86enu"
 $url_vcppLatestx86 = "https://aka.ms/vs/17/release/vc_redist.x86.exe"
 $url_vcppLatestx64 = "https://aka.ms/vs/17/release/vc_redist.x64.exe"
