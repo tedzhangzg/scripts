@@ -10,8 +10,8 @@
 $url_addmsstore = "https://github.com/kkkgo/LTSC-Add-MicrosoftStore/archive/refs/heads/master.zip"
 
 # C++ Runtime framework packages for Desktop Bridge
-$url_cppdb14x86 = "https://aka.ms/Microsoft.VCLibs.x86.14.00.Desktop.appx"
-$url_cppdb14x64 = "https://aka.ms/Microsoft.VCLibs.x64.14.00.Desktop.appx"
+$url_cppdb14_x86 = "https://aka.ms/Microsoft.VCLibs.x86.14.00.Desktop.appx"
+$url_cppdb14_x64 = "https://aka.ms/Microsoft.VCLibs.x64.14.00.Desktop.appx"
 
 # Windows Package Manager
 $url_winget = "https://github.com/microsoft/winget-cli/releases/download/v1.3.2091/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle"
@@ -29,18 +29,18 @@ $url_dotnetfw11rtm = "https://raw.githubusercontent.com/not001praween001/stockMN
 $url_dotnetfw11sp1 = "https://download.microsoft.com/download/8/b/4/8b4addd8-e957-4dea-bdb8-c4e00af5b94b/NDP1.1sp1-KB867460-X86.exe"
 
 # Visual C++ Redistributable
-$url_vcpp2005x86 = "https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x86.EXE"
-$url_vcpp2005x64 = "https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x64.EXE"
-$url_vcpp2008x86 = "https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x86.exe"
-$url_vcpp2008x64 = "https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x64.exe"
-$url_vcpp2010x86 = "https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x86.exe"
-$url_vcpp2010x64 = "https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x64.exe"
-$url_vcpp2012x86 = "https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x86.exe"
-$url_vcpp2012x64 = "https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x64.exe"
-$url_vcpp2013x86 = "https://aka.ms/highdpimfc2013x86enu"
-$url_vcpp2013x64 = "https://aka.ms/highdpimfc2013x64enu"
-$url_vcppLatestx86 = "https://aka.ms/vs/17/release/vc_redist.x86.exe"
-$url_vcppLatestx64 = "https://aka.ms/vs/17/release/vc_redist.x64.exe"
+$url_vcpp2005_x86 = "https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x86.EXE"
+$url_vcpp2005_x64 = "https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x64.EXE"
+$url_vcpp2008_x86 = "https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x86.exe"
+$url_vcpp2008_x64 = "https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x64.exe"
+$url_vcpp2010_x86 = "https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x86.exe"
+$url_vcpp2010_x64 = "https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x64.exe"
+$url_vcpp2012_x86 = "https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x86.exe"
+$url_vcpp2012_x64 = "https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x64.exe"
+$url_vcpp2013_x86 = "https://aka.ms/highdpimfc2013x86enu"
+$url_vcpp2013_x64 = "https://aka.ms/highdpimfc2013x64enu"
+$url_vcpp2015ToLatest_x86 = "https://aka.ms/vs/17/release/vc_redist.x86.exe"
+$url_vcpp2015ToLatest_x64 = "https://aka.ms/vs/17/release/vc_redist.x64.exe"
 $url_vcppLatesta64 = "https://aka.ms/vs/17/release/vc_redist.arm64.exe"
 
 # C++ Runtime v11.0 framework package for Desktop Bridge (Project Centennial)
