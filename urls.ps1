@@ -52,6 +52,10 @@ $url_cppdb12x86 = "https://download.microsoft.com/download/2/1/F/21F05B77-C444-4
 # Linux kernel update package x64
 $url_wsl2kernel = "https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi"
 
+# Visual Studio Code
+$url_vscode_x64 = "https://code.visualstudio.com/sha/download?build=stable&os=win32-x64"
+$url_vscode_x86 = "https://code.visualstudio.com/sha/download?build=stable&os=win32"
+
 # Windows Essentials 2012
 $url_winessen = "https://archive.org/download/wlsetup-all_201802/wlsetup-all.exe"
 
