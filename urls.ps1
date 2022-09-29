@@ -41,20 +41,20 @@ $url_vcpp2013_x86 = "https://aka.ms/highdpimfc2013x86enu"
 $url_vcpp2013_x64 = "https://aka.ms/highdpimfc2013x64enu"
 $url_vcpp2015ToLatest_x86 = "https://aka.ms/vs/17/release/vc_redist.x86.exe"
 $url_vcpp2015ToLatest_x64 = "https://aka.ms/vs/17/release/vc_redist.x64.exe"
-$url_vcppLatesta64 = "https://aka.ms/vs/17/release/vc_redist.arm64.exe"
+$url_vcpp2015ToLatest_a64 = "https://aka.ms/vs/17/release/vc_redist.arm64.exe"
 
 # C++ Runtime v11.0 framework package for Desktop Bridge (Project Centennial)
-$url_cppdb11x86 = "https://download.microsoft.com/download/3/B/C/3BC60F47-6A7C-4D46-8CFB-C2E746EF336E/vc_uwpdesktop.110.exe"
+$url_cppdb11_x86 = "https://download.microsoft.com/download/3/B/C/3BC60F47-6A7C-4D46-8CFB-C2E746EF336E/vc_uwpdesktop.110.exe"
 
 # C++ Runtime v12 framework package for Desktop Bridge (Project Centennial)
-$url_cppdb12x86 = "https://download.microsoft.com/download/2/1/F/21F05B77-C444-46C0-B357-7EBC78C95CE2/vc_uwpdesktop.120.exe"
+$url_cppdb12_x86 = "https://download.microsoft.com/download/2/1/F/21F05B77-C444-46C0-B357-7EBC78C95CE2/vc_uwpdesktop.120.exe"
 
 # Linux kernel update package x64
 $url_wsl2kernel = "https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi"
 
 # Visual Studio Code
-$url_vscode_x64 = "https://code.visualstudio.com/sha/download?build=stable&os=win32-x64"
 $url_vscode_x86 = "https://code.visualstudio.com/sha/download?build=stable&os=win32"
+$url_vscode_x64 = "https://code.visualstudio.com/sha/download?build=stable&os=win32-x64"
 
 # Windows Essentials 2012
 $url_winessen = "https://archive.org/download/wlsetup-all_201802/wlsetup-all.exe"
@@ -69,7 +69,7 @@ $url_googledrive = "https://dl.google.com/drive-file-stream/GoogleDriveSetup.exe
 $url_teamviewer = "https://download.teamviewer.com/download/version_13x/TeamViewerQS.exe"
 
 # Java 8 JRE x86
-$url_java8x86 = "https://javadl.oracle.com/webapps/download/GetFile/1.8.0_341-b10/424b9da4b48848379167015dcc250d8d/windows-i586/jre-8u341-windows-i586.exe"
+$url_java8_x86 = "https://javadl.oracle.com/webapps/download/GetFile/1.8.0_341-b10/424b9da4b48848379167015dcc250d8d/windows-i586/jre-8u341-windows-i586.exe"
 
 # Java 10 JRE
 $url_java10 = "https://javadl.oracle.com/webapps/download/GetFile/10.0.2+13/19aef61b38124481863b1413dce1855f/windows-i586/jre-10.0.2_windows-x64_bin.exe"
@@ -84,10 +84,10 @@ $url_java17 = "https://download.oracle.com/java/17/latest/jdk-17_windows-x64_bin
 $url_odt2013 = "https://download.microsoft.com/download/6/2/3/6230F7A2-D8A9-478B-AC5C-57091B632FCF/officedeploymenttool_x86_5031-1000.exe"
 
 # Microsoft Access Database Engine
-$url_msaccessdbeng_2010x86 = "https://download.microsoft.com/download/2/4/3/24375141-E08D-4803-AB0E-10F2E3A07AAA/AccessDatabaseEngine.exe"
-$url_msaccessdbeng_2010x64 = "https://download.microsoft.com/download/2/4/3/24375141-E08D-4803-AB0E-10F2E3A07AAA/AccessDatabaseEngine_X64.exe"
-$url_msaccessdbeng_2016x86 = "https://download.microsoft.com/download/3/5/C/35C84C36-661A-44E6-9324-8786B8DBE231/accessdatabaseengine.exe"
-$url_msaccessdbeng_2016x64 = "https://download.microsoft.com/download/3/5/C/35C84C36-661A-44E6-9324-8786B8DBE231/accessdatabaseengine_X64.exe"
+$url_msaccessdbeng_2010_x86 = "https://download.microsoft.com/download/2/4/3/24375141-E08D-4803-AB0E-10F2E3A07AAA/AccessDatabaseEngine.exe"
+$url_msaccessdbeng_2010_x64 = "https://download.microsoft.com/download/2/4/3/24375141-E08D-4803-AB0E-10F2E3A07AAA/AccessDatabaseEngine_X64.exe"
+$url_msaccessdbeng_2016_x86 = "https://download.microsoft.com/download/3/5/C/35C84C36-661A-44E6-9324-8786B8DBE231/accessdatabaseengine.exe"
+$url_msaccessdbeng_2016_x64 = "https://download.microsoft.com/download/3/5/C/35C84C36-661A-44E6-9324-8786B8DBE231/accessdatabaseengine_X64.exe"
 
 # KMS
 $url_convr2v = "https://raw.githubusercontent.com/abbodi1406/C2R-R2V-AIO/master/C2R-R2V-AIO.cmd"
