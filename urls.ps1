@@ -28,6 +28,12 @@ $url_dotnetfw481 = "https://go.microsoft.com/fwlink/?linkid=2203305"
 $url_dotnetfw11rtm = "https://raw.githubusercontent.com/not001praween001/stockMN-exe/master/stockMN_1.3.1/dotnetfx.exe"
 $url_dotnetfw11sp1 = "https://download.microsoft.com/download/8/b/4/8b4addd8-e957-4dea-bdb8-c4e00af5b94b/NDP1.1sp1-KB867460-X86.exe"
 
+# .NET Core
+$url_dotnet21HB = "https://download.visualstudio.microsoft.com/download/pr/cf7b17e3-ed6d-4ded-8ae6-9f83ffaaca98/9d2ca844baa4a4a9ed83861ffc8e293e/dotnet-hosting-2.1.30-win.exe"
+$url_dotnet31HB = "https://download.visualstudio.microsoft.com/download/pr/d7924d3c-977f-4130-bcf3-5851881e90c4/9f8715d4e5824730da1d78ace9baeb9e/dotnet-hosting-3.1.29-win.exe"
+$url_dotnet31DRTx86 = "https://download.visualstudio.microsoft.com/download/pr/b5a2058e-d1a7-48f6-a615-353973a1f960/9a2efe2b3d299f1e276106da8cea1c1d/windowsdesktop-runtime-3.1.29-win-x86.exe"
+$url_dotnet31DRTx64 = "https://download.visualstudio.microsoft.com/download/pr/6a9318dd-fec5-4df3-84df-ffd917b382ea/d3391ca5a4e14a8a96e04bbfa5c4c2dc/windowsdesktop-runtime-3.1.29-win-x64.exe"
+
 # Visual C++ Redistributable
 $url_vcpp2005_x86 = "https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x86.EXE"
 $url_vcpp2005_x64 = "https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x64.EXE"
