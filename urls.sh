@@ -55,8 +55,8 @@ url_zoom="https://zoom.us/client/latest/Zoom.pkg"
 
 # Microsoft Office
 url_microsoft_office="https://go.microsoft.com/fwlink/p/?linkid=525133"
-# last version for macOS 10.15??
-url_microsoft_office_16_1665="https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.65.22091101_Installer.pkg"
+# last version for macOS 10.15
+url_microsoft_office_16_1666="https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.66.22100900_Installer.pkg"
 # last version for macOS 10.14
 url_microsoft_office_16_1654="https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.54.21101001_Installer.pkg"
 # last version for macOS 10.13
