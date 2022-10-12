@@ -28,6 +28,12 @@ url_google_chrome_pkg="https://dl.google.com/dl/chrome/mac/universal/stable/gcem
 # Google Drive
 url_google_drive="https://dl.google.com/drive-file-stream/GoogleDrive.dmg"
 
+# Dropbox
+url_dropbox="https://www.dropbox.com/download?plat=mac&full=1"
+
+# Zoom
+url_zoom="https://zoom.us/client/latest/Zoom.pkg"
+
 # TeamViewer QuickSupport v13
 url_teamviewer="https://download.teamviewer.com/download/version_13x/TeamViewerQS.dmg"
 
@@ -50,27 +56,25 @@ url_firefox="https://download.mozilla.org/?product=firefox-latest-ssl&os=osx"
 # Mozilla Thunderbird
 url_thunderbird="https://download.mozilla.org/?product=thunderbird-latest-ssl&os=osx"
 
-# Zoom
-url_zoom="https://zoom.us/client/latest/Zoom.pkg"
-
 # Microsoft Office
 url_microsoft_office="https://go.microsoft.com/fwlink/p/?linkid=525133"
 # last version for macOS 10.15
-url_microsoft_office_16_1666="https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.66.22100900_Installer.pkg"
+url_microsoft_office_16_v1666="https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.66.22100900_Installer.pkg"
 # last version for macOS 10.14
-url_microsoft_office_16_1654="https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.54.21101001_Installer.pkg"
+url_microsoft_office_16_v1654="https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.54.21101001_Installer.pkg"
 # last version for macOS 10.13
-url_microsoft_office_2019_1643="https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.43.20110804_Installer.pkg"
+url_microsoft_office_2019_v1643="https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.43.20110804_Installer.pkg"
 # last version for macOS 10.12
-url_microsoft_office_2019_1629="https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.29.19090802_Installer.pkg"
+url_microsoft_office_2019_v1629="https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.29.19090802_Installer.pkg"
 # last version for macOS 10.11
-url_microsoft_office_2016="https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.16.20101200_Installer.pkg"
+url_microsoft_office_2016_v1616="https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/OfficeMac/Microsoft_Office_16.16.18081201_Installer.pkg"
+# last version for macOS 10.10
+# last version for macOS 10.9
+# last version for macOS 10.8
+# last version for macOS 10.7
+# Older macOS
 url_microsoft_office_2011=""
 # Links forwarded to downloads
 # url_office2019="https://go.microsoft.com/fwlink/?linkid=525133"
 # url_office2016="https://go.microsoft.com/fwlink/?linkid=871743"
-
-# Dropbox
-url_dropbox="https://www.dropbox.com/download?plat=mac&full=1"
-
 
