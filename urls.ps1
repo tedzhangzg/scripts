@@ -14,8 +14,9 @@ $url_cppdb14_x86 = "https://aka.ms/Microsoft.VCLibs.x86.14.00.Desktop.appx"
 $url_cppdb14_x64 = "https://aka.ms/Microsoft.VCLibs.x64.14.00.Desktop.appx"
 
 # Windows Package Manager
-$url_winget = "https://github.com/microsoft/winget-cli/releases/download/v1.3.2091/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle"
+$url_winget = "https://github.com/microsoft/winget-cli/releases/download/v1.3.2691/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle"
 # Old Version
+# $url_winget = "https://github.com/microsoft/winget-cli/releases/download/v1.3.2091/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle"
 # $url_winget = "https://github.com/microsoft/winget-cli/releases/download/v1.2.10271/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle"
 # $url_winget = "https://github.com/microsoft/winget-cli/releases/download/v1.1.12653/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle"
 # $url_winget = "https://github.com/microsoft/winget-cli/releases/download/v1.0.11692/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle"
