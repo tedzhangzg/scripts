@@ -35,7 +35,7 @@ url_dropbox="https://www.dropbox.com/download?plat=mac&full=1"
 url_zoom="https://zoom.us/client/latest/Zoom.pkg"
 
 # TeamViewer QuickSupport v13
-url_teamviewer="https://download.teamviewer.com/download/version_13x/TeamViewerQS.dmg"
+url_teamviewerqs_v13="https://download.teamviewer.com/download/version_13x/TeamViewerQS.dmg"
 
 # Java 8 JRE
 url_java8="https://javadl.oracle.com/webapps/download/GetFile/1.8.0_351-b10/10e8cce67c7843478f41411b7003171c/unix-i586/jre-8u351-macosx-x64.dmg"
