@@ -40,25 +40,25 @@ $url_dotnet31DRTx64 = "https://download.visualstudio.microsoft.com/download/pr/b
 $url_dotnet21HB = "https://download.visualstudio.microsoft.com/download/pr/cf7b17e3-ed6d-4ded-8ae6-9f83ffaaca98/9d2ca844baa4a4a9ed83861ffc8e293e/dotnet-hosting-2.1.30-win.exe"
 
 # Visual C++ Redistributable
-$url_vcpp2005_x86 = "https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x86.EXE"
-$url_vcpp2005_x64 = "https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x64.EXE"
-$url_vcpp2008_x86 = "https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x86.exe"
-$url_vcpp2008_x64 = "https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x64.exe"
-$url_vcpp2010_x86 = "https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x86.exe"
-$url_vcpp2010_x64 = "https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x64.exe"
-$url_vcpp2012_x86 = "https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x86.exe"
-$url_vcpp2012_x64 = "https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x64.exe"
-$url_vcpp2013_x86 = "https://aka.ms/highdpimfc2013x86enu"
-$url_vcpp2013_x64 = "https://aka.ms/highdpimfc2013x64enu"
-$url_vcpp2015ToLatest_x86 = "https://aka.ms/vs/17/release/vc_redist.x86.exe"
-$url_vcpp2015ToLatest_x64 = "https://aka.ms/vs/17/release/vc_redist.x64.exe"
-$url_vcpp2015ToLatest_a64 = "https://aka.ms/vs/17/release/vc_redist.arm64.exe"
+$url_vcpp_2005_x86 = "https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x86.EXE"
+$url_vcpp_2005_x64 = "https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x64.EXE"
+$url_vcpp_2008_x86 = "https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x86.exe"
+$url_vcpp_2008_x64 = "https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x64.exe"
+$url_vcpp_2010_x86 = "https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x86.exe"
+$url_vcpp_2010_x64 = "https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x64.exe"
+$url_vcpp_2012_x86 = "https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x86.exe"
+$url_vcpp_2012_x64 = "https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x64.exe"
+$url_vcpp_2013_x86 = "https://aka.ms/highdpimfc2013x86enu"
+$url_vcpp_2013_x64 = "https://aka.ms/highdpimfc2013x64enu"
+$url_vcpp_2015toLatest_x86 = "https://aka.ms/vs/17/release/vc_redist.x86.exe"
+$url_vcpp_2015toLatest_x64 = "https://aka.ms/vs/17/release/vc_redist.x64.exe"
+$url_vcpp_2015toLatest_a64 = "https://aka.ms/vs/17/release/vc_redist.arm64.exe"
 
 # C++ Runtime v11.0 framework package for Desktop Bridge (Project Centennial)
-$url_cppdb11_x86 = "https://download.microsoft.com/download/3/B/C/3BC60F47-6A7C-4D46-8CFB-C2E746EF336E/vc_uwpdesktop.110.exe"
+$url_cppdb_11_x86 = "https://download.microsoft.com/download/3/B/C/3BC60F47-6A7C-4D46-8CFB-C2E746EF336E/vc_uwpdesktop.110.exe"
 
 # C++ Runtime v12 framework package for Desktop Bridge (Project Centennial)
-$url_cppdb12_x86 = "https://download.microsoft.com/download/2/1/F/21F05B77-C444-46C0-B357-7EBC78C95CE2/vc_uwpdesktop.120.exe"
+$url_cppdb_12_x86 = "https://download.microsoft.com/download/2/1/F/21F05B77-C444-46C0-B357-7EBC78C95CE2/vc_uwpdesktop.120.exe"
 
 # Linux kernel update package x64
 $url_wsl2kernel = "https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi"
@@ -68,7 +68,7 @@ $url_vscode_x86 = "https://code.visualstudio.com/sha/download?build=stable&os=wi
 $url_vscode_x64 = "https://code.visualstudio.com/sha/download?build=stable&os=win32-x64"
 
 # Windows Essentials 2012
-$url_winessen = "https://archive.org/download/wlsetup-all_201802/wlsetup-all.exe"
+$url_winessentials_2012 = "https://archive.org/download/wlsetup-all_201802/wlsetup-all.exe"
 
 # Skype MSI
 $url_skypemsi = "http://go.skype.com/msi-download"
@@ -77,24 +77,24 @@ $url_skypemsi = "http://go.skype.com/msi-download"
 $url_googledrive = "https://dl.google.com/drive-file-stream/GoogleDriveSetup.exe"
 
 # TeamViewer QuickSupport v13
-$url_teamviewerqs_v13 = "https://download.teamviewer.com/download/version_13x/TeamViewerQS.exe"
+$url_teamviewerqs_13 = "https://download.teamviewer.com/download/version_13x/TeamViewerQS.exe"
 
 # Java JRE
-$url_java8_x86 = "https://javadl.oracle.com/webapps/download/GetFile/1.8.0_351-b10/10e8cce67c7843478f41411b7003171c/windows-i586/jre-8u351-windows-i586.exe"
-$url_java8_x64 = "https://javadl.oracle.com/webapps/download/GetFile/1.8.0_351-b10/10e8cce67c7843478f41411b7003171c/windows-i586/jre-8u351-windows-x64.exe"
-$url_java10 = "https://javadl.oracle.com/webapps/download/GetFile/10.0.2+13/19aef61b38124481863b1413dce1855f/windows-i586/jre-10.0.2_windows-x64_bin.exe"
+$url_java_8_x86 = "https://javadl.oracle.com/webapps/download/GetFile/1.8.0_351-b10/10e8cce67c7843478f41411b7003171c/windows-i586/jre-8u351-windows-i586.exe"
+$url_java_8_x64 = "https://javadl.oracle.com/webapps/download/GetFile/1.8.0_351-b10/10e8cce67c7843478f41411b7003171c/windows-i586/jre-8u351-windows-x64.exe"
+$url_java_10 = "https://javadl.oracle.com/webapps/download/GetFile/10.0.2+13/19aef61b38124481863b1413dce1855f/windows-i586/jre-10.0.2_windows-x64_bin.exe"
 # Java JDK
-$url_java11 = ""
-$url_java17 = "https://download.oracle.com/java/17/latest/jdk-17_windows-x64_bin.exe"
+$url_java_11 = ""
+$url_java_17 = "https://download.oracle.com/java/17/latest/jdk-17_windows-x64_bin.exe"
 
 # Office 2013 ODT
-$url_odt2013 = "https://download.microsoft.com/download/6/2/3/6230F7A2-D8A9-478B-AC5C-57091B632FCF/officedeploymenttool_x86_5031-1000.exe"
+$url_odt_2013 = "https://download.microsoft.com/download/6/2/3/6230F7A2-D8A9-478B-AC5C-57091B632FCF/officedeploymenttool_x86_5031-1000.exe"
 
 # Microsoft Access Database Engine
-$url_msaccessdbeng_2010_x86 = "https://download.microsoft.com/download/2/4/3/24375141-E08D-4803-AB0E-10F2E3A07AAA/AccessDatabaseEngine.exe"
-$url_msaccessdbeng_2010_x64 = "https://download.microsoft.com/download/2/4/3/24375141-E08D-4803-AB0E-10F2E3A07AAA/AccessDatabaseEngine_X64.exe"
-$url_msaccessdbeng_2016_x86 = "https://download.microsoft.com/download/3/5/C/35C84C36-661A-44E6-9324-8786B8DBE231/accessdatabaseengine.exe"
-$url_msaccessdbeng_2016_x64 = "https://download.microsoft.com/download/3/5/C/35C84C36-661A-44E6-9324-8786B8DBE231/accessdatabaseengine_X64.exe"
+$url_msaccessdbengine_2010_x86 = "https://download.microsoft.com/download/2/4/3/24375141-E08D-4803-AB0E-10F2E3A07AAA/AccessDatabaseEngine.exe"
+$url_msaccessdbengine_2010_x64 = "https://download.microsoft.com/download/2/4/3/24375141-E08D-4803-AB0E-10F2E3A07AAA/AccessDatabaseEngine_X64.exe"
+$url_msaccessdbengine_2016_x86 = "https://download.microsoft.com/download/3/5/C/35C84C36-661A-44E6-9324-8786B8DBE231/accessdatabaseengine.exe"
+$url_msaccessdbengine_2016_x64 = "https://download.microsoft.com/download/3/5/C/35C84C36-661A-44E6-9324-8786B8DBE231/accessdatabaseengine_X64.exe"
 
 # KMS
 $url_convr2v = "https://raw.githubusercontent.com/abbodi1406/C2R-R2V-AIO/master/C2R-R2V-AIO.cmd"
