@@ -85,11 +85,7 @@ function dmgcpapp() {
     else
         name_vol="$2"
     fi
-    echo "name of vol is..."
-    echo $name_vol
     name_app=$(ls "/Volumes/$name_vol" | egrep '\.app$')
-    echo "name of app is..."
-    echo $name_app
     yes | sudo cp -R "/Volumes/$name_vol/$name_app" /Applications
     hdiutil detach -quiet "/Volumes/$name_vol"
     name_vol_specific=""
