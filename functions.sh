@@ -9,10 +9,12 @@
 
 
 # Clear Terminal History
-function clrHist() {
-    rm -rf ~/.bash_history
-    rm -rf ~/.zsh_history
+function cleaHistor() {
+    sudo rm -rf /var/root/.bash_history
+    rm -rf $HOME/.bash_history
+    rm -rf $HOME/.zsh_history
 }
+
 
 
 # Get archi, even Rosetta emulation
