@@ -40,6 +40,21 @@ function getarch() {
 
 
 
+# Create Folder, preventing error if exist
+# 
+# Usage
+# createnewemptyfolder "$folder_name"
+# 
+function createnewemptyfolder() {
+    if [ -d "$1" ]
+    then
+        rm -rf "$1"
+    fi
+    mkdir $1
+}
+
+
+
 # Download .pkg, Install .pkg
 # 
 # Usage
