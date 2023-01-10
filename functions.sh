@@ -47,7 +47,7 @@ function autodetectArchitecture() {
 # Usage
 # createnewemptyfolder "$folder_name"
 # 
-function createnewemptyfolder() {
+function createNewEmptyFolder() {
     if [ -d "$1" ]
     then
         rm -rf "$1"
@@ -60,9 +60,9 @@ function createnewemptyfolder() {
 # Download .pkg, Install .pkg
 # 
 # Usage
-# pkgdlinst "$link_to_pkg"
+# pkgDownloadInstall "$link_to_pkg"
 # 
-function pkgdlinst() {
+function pkgDownloadInstall() {
     pushd ~/Downloads
     curl -L -o installer.pkg "$1"
     sudo installer -pkg "installer.pkg" -target /
@@ -75,9 +75,9 @@ function pkgdlinst() {
 # Mount .dmg, Copy .app into /Applications
 # 
 # Usage
-# dmgcpapp "$dir_installer" "$name_vol_specific"
+# dmgCopyApp "$dir_installer" "$name_vol_specific"
 # 
-function dmgcpapp() {
+function dmgCopyApp() {
     hdiutil attach -quiet -nobrowse -noverify "$1/$(ls $1 | egrep '\.dmg$')"
     if [ "$2" = "" ]
     then
@@ -86,7 +86,7 @@ function dmgcpapp() {
         name_vol="$2"
     fi
     name_app=$(ls "/Volumes/$name_vol" | egrep '\.app$')
-    yes | sudo cp -R "/Volumes/$name_vol/$name_app" /Applications
+    sudo cp -R "/Volumes/$name_vol/$name_app" /Applications
     hdiutil detach -quiet "/Volumes/$name_vol"
     name_vol_specific=""
 }
@@ -96,9 +96,9 @@ function dmgcpapp() {
 # Mount .dmg, Open .app to install
 # 
 # Usage
-# dmgopinsapp "$dir_installer" "$name_vol_specific"
+# dmgOpenInstallApp "$dir_installer" "$name_vol_specific"
 # 
-function dmgopinsapp() {
+function dmgOpenInstallApp() {
     hdiutil attach -quiet -nobrowse -noverify "$1/$(ls $1 | egrep '\.dmg$')"
     if [ "$2" = "" ]
     then
@@ -107,7 +107,9 @@ function dmgopinsapp() {
         name_vol="$2"
     fi
     name_app=$(ls "/Volumes/$name_vol" | egrep '\.app$')
-    open "/Volumes/$name_vol/$name_app"
+    name_executable=$(ls /Volumes/$name_vol/$name_app/Contents/MacOS)
+    sudo /Volumes/$name_vol/$name_app/Contents/MacOS/name_executable
+    # open "/Volumes/$name_vol/$name_app"
     hdiutil detach -quiet "/Volumes/$name_vol"
     name_vol_specific=""
 }
