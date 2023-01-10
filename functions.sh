@@ -57,6 +57,11 @@ function createNewEmptyFolder() {
 
 
 
+# Get Homebrew Cask URL for download
+# 
+# Usage
+# getCaskURL "$caskName"
+# 
 function getCaskURL() {
 
     # Notes
