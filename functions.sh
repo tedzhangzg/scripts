@@ -9,7 +9,7 @@
 
 
 # Clear Terminal History
-function cleaHistor() {
+function clearTerminalHistory() {
     sudo rm -rf /var/root/.bash_history
     rm -rf $HOME/.bash_history
     rm -rf $HOME/.zsh_history
@@ -18,22 +18,22 @@ function cleaHistor() {
 
 
 # Get archi, even Rosetta emulation
-function getarch() {
+function autodetectArchitecture() {
     
     # Using UNIX uname
     arch_name="$(uname -m)"
     
-    if [ "${arch_name}" = "x86_64" ]
+    if [ "${arch_name}" = "arm64" ]
     then
+        echo "Auto-detect: Native ARM"
+    elif [ "${arch_name}" = "x86_64" ]; then
         # Check if running under Rosetta 2 emulation on ARM
         if [ "$(sysctl -in sysctl.proc_translated)" = "1" ]
         then
-            echo "Architecture autodetech: Rosetta 2 emulation on ARM"
+            echo "Auto-detect: Rosetta 2 emulation on ARM"
         else
-            echo "Architecture autodetech: Native Intel"
-        fi 
-    elif [ "${arch_name}" = "arm64" ]; then
-        echo "Architecture autodetech: Native ARM"
+            echo "Auto-detect: Native Intel"
+        fi
     else
         echo "Unknown architecture: ${arch_name}"
     fi
