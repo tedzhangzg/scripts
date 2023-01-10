@@ -45,7 +45,7 @@ function autodetectArchitecture() {
 # Create Folder, preventing error if exist
 # 
 # Usage
-# createnewemptyfolder "$folder_name"
+# createNewEmptyFolder "$folder_name"
 # 
 function createNewEmptyFolder() {
     if [ -d "$1" ]
