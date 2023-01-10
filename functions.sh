@@ -57,6 +57,28 @@ function createNewEmptyFolder() {
 
 
 
+function getCaskURL() {
+
+    # Notes
+    # $1 is the input of cask name
+
+    jsonFile=$( curl -s https://formulae.brew.sh/api/cask/$1.json )
+
+    read -r -d '' JXA <<EOF
+    function run() {
+        var jsonParse = JSON.parse(\`$jsonFile\`);
+        return jsonParse.url;
+    }
+    EOF
+
+    URL=$( osascript -l 'JavaScript' <<< "${JXA}" )
+
+    return $URL
+
+}
+
+
+
 # Download .pkg, Install .pkg
 # 
 # Usage
