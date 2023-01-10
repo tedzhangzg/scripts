@@ -96,9 +96,9 @@ function dmgCopyApp() {
 # Mount .dmg, Open .app to install
 # 
 # Usage
-# dmgOpenInstallApp "$dir_installer" "$name_vol_specific"
+# dmgInstallApp "$dir_installer" "$name_vol_specific"
 # 
-function dmgOpenInstallApp() {
+function dmgInstallApp() {
     hdiutil attach -quiet -nobrowse -noverify "$1/$(ls $1 | egrep '\.dmg$')"
     if [ "$2" = "" ]
     then
