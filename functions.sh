@@ -132,11 +132,17 @@ function downloadInstaller() {
 function pkgInstall() {
     echo "Installing $1 ..."
 
+    # cd
+    pushd "$1"
+
     # Get name
-    pkgName="$(ls $1 | egrep '\.pkg$')"
+    pkgName="$(ls | egrep '\.pkg$')"
 
     # Install
-    sudo installer -pkg "$1/$pkgName" -target /
+    sudo installer -pkg "$pkgName" -target /
+
+    # cd
+    popd
 
     echo "... Done Installing $1"
 }
