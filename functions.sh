@@ -124,26 +124,20 @@ function downloadInstaller() {
 
 
 
-# Install App pkg
+# Install PKG
 # 
 # Usage
 # pkgInstall "$dir_installer"
 # 
 function pkgInstall() {
     echo "Installing $1 ..."
-    
-    # cd
-    pushd "$1"
-    
+
     # Get name
-    pkgName=$(ls | egrep '\.pkg$')
-    
+    pkgName=$(ls "$1" | egrep '\.pkg$')
+
     # Install
-    sudo installer -pkg "$pkgName" -target /
-    
-    # cd
-    popd
-    
+    sudo installer -pkg "$1/$pkgName" -target /
+
     echo "... Done Installing $1"
 }
 
@@ -158,7 +152,7 @@ function dmgCopyApp() {
     echo "Copying app in dmg ..."
 
     # Get dmg filename
-    filename_dmg=$(ls $1 | egrep '\.dmg$')
+    filename_dmg="$(ls $1 | egrep '\.dmg$')"
 
     # Mount dmg
     hdiutil attach -quiet -nobrowse -noverify "$1/$filename_dmg"
@@ -197,7 +191,7 @@ function dmgInstallApp() {
     echo "Installing app in dmg ..."
 
     # Get dmg filename
-    filename_dmg=$(ls $1 | egrep '\.dmg$')
+    filename_dmg="$(ls $1 | egrep '\.dmg$')"
 
     # Mount dmg
     hdiutil attach -quiet -nobrowse -noverify "$1/$filename_dmg"
