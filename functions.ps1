@@ -143,7 +143,7 @@ Function Creat-NewEmpty-Folde($path_folder) {
 
 
 
-# Download App
+# Download Installer
 # 
 # Usage
 # Downloa-Installe "$url" "$dir_installer"
