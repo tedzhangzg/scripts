@@ -106,21 +106,50 @@ function createNewEmptyFolder() {
 # Download Installer
 # 
 # Usage
-# downloadInstaller "$url_pkg" "$dir_installer"
+# downloadInstaller "$url" "$dir_installer"
 # 
 function downloadInstaller() {
     echo "Downloading $2 ..."
     
     # Create new folder
-    createNewEmptyFolder $2
+    createNewEmptyFolder "$2"
     
     # Download
     pushd $2
-    curl -L -O $1
+    curl -L -O "$1"
     popd
     
     echo "... Done Downloading $2"
 }
+
+
+
+# Install App pkg
+# 
+# Usage
+# installAppPKG "$dir_installer"
+# 
+function installAppPKG() {
+    echo "Installing $1 ..."
+    
+    # cd
+    pushd "$1"
+    
+    # Get name
+    pkgName=$(ls | egrep '\.pkg$')
+    
+    # Install
+    sudo installer -pkg "$pkgName" -target /
+    
+    # cd
+    popd
+    
+    echo "... Done Installing $1"
+}
+
+
+
+
 
 
 
