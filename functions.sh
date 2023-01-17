@@ -149,26 +149,6 @@ function installAppPKG() {
 
 
 
-
-
-
-
-
-# Download .pkg to $HOME/Downloads, Install .pkg, Remove .pkg
-# 
-# Usage
-# pkgDownloadInstall "$url_pkg"
-# 
-function pkgDownloadInstall() {
-    pushd ~/Downloads
-    curl -L -o installer.pkg "$1"
-    sudo installer -pkg "installer.pkg" -target /
-    rm "installer.pkg"
-    popd
-}
-
-
-
 # Mount .dmg, Copy .app into /Applications, Unmount .dmg
 # 
 # Usage
