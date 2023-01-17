@@ -75,6 +75,19 @@ function meetMinOS() {
 
 
 
+# Get URL from brew JSON file
+# 
+# Usage
+# getURLFromBrew "$brew_cask_name"
+# 
+function getURLFromBrew() {
+    url_json_file="https://formulae.brew.sh/api/cask/$1.json"
+    url_brew_package=$(curl -s $url_json_file | python3 -c "import sys, json; print(json.load(sys.stdin)['url'])")
+    echo $url_brew_package
+}
+
+
+
 # Create Folder, preventing error if exist
 # 
 # Usage
@@ -90,16 +103,25 @@ function createNewEmptyFolder() {
 
 
 
-# Get URL from brew'
+# Download Installer
 # 
 # Usage
-# getURLFromBrew "$brew_cask_name"
+# downloadInstaller "$url_pkg" "$dir_installer"
 # 
-function getURLFromBrew() {
-    url_json_file="https://formulae.brew.sh/api/cask/$1.json"
-    url_brew_package=$(curl -s $url_json_file | python3 -c "import sys, json; print(json.load(sys.stdin)['url'])")
-    echo $url_brew_package
+function downloadInstaller() {
+    echo "Downloading $2 ..."
+    
+    # Create new folder
+    createNewEmptyFolder $2
+    
+    # Download
+    pushd $2
+    curl -L -O $1
+    popd
+    
+    echo "... Done Downloading $2"
 }
+
 
 
 
