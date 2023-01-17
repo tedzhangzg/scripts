@@ -71,7 +71,7 @@ function createNewEmptyFolder() {
 # getURLFromBrew "$brew_cask_name"
 # 
 function getURLFromBrew() {
-    url_from_brew_jsonfile=$(curl -s 'https://formulae.brew.sh/api/cask/google-chrome.json' | python3 -c "import sys, json; print(json.load(sys.stdin)['url'])")
+    url_from_brew_jsonfile=$(curl -s 'https://formulae.brew.sh/api/cask/$1.json' | python3 -c "import sys, json; print(json.load(sys.stdin)['url'])")
     echo $url_from_brew_jsonfile
 }
 
