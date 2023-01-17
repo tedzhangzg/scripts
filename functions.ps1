@@ -94,6 +94,10 @@ Function Is-Win11() {
 
 
 # Get URL from winget
+# 
+# Usage
+# Get-URL-FromWinget "$app_wgname"
+# 
 # Useful for manual install or when hash isn't updated in manifest
 Function Get-URL-FromWinget($app_wgname) {
 
@@ -111,38 +115,39 @@ Function Get-URL-FromWinget($app_wgname) {
     return $url
 
 }
-# To use,
-# Provide $app_wgname
-# Get-URL-FromWinget $app_wgname
 
 
 
 # Remove Folder recursively, preventing error if not exist
+# 
+# Usage
+# Remov-Folde "$path_folder"
+# 
 Function Remov-Folde($path_folder) {
     if (Test-Path -Path $path_folder) {
         Get-Item -Path $path_folder | Remove-Item -Recurse -Force
     }
 }
-# To use,
-# Provide $path_folder
-# Remov-Folde $path_folder
 
 
 
 # Create Folder, preventing error if exist
-# Used especially for temp downloads
+# 
+# Usage
+# Creat-NewEmpty-Folde "$path_folder"
+# 
 Function Creat-NewEmpty-Folde($path_folder) {
     Remov-Folde $path_folder
     New-Item -ItemType "directory" -Path $path_folder -Force | Out-Null
 }
-# To use,
-# Provide $path_folder
-# Creat-NewEmpty-Folde $path_folder
 
 
 
 # Download App
-# Given some apps are not on winget
+# 
+# Usage
+# Downloa-Ap "$url" "$dir_installer"
+# 
 Function Downloa-Ap($url, $dir_installer) {
     Write-Host "Downloading $dir_installer ...."
 
@@ -156,14 +161,14 @@ Function Downloa-Ap($url, $dir_installer) {
 
     Write-Host "... Done Downloading $dir_installer"
 }
-# To use,
-# Provide $url $dir_installer
-# Downloa-Ap $url $dir_installer
 
 
 
 # Install App
-# Given folder with one installer file only
+# 
+# Usage
+# Instal-Ap "$dir_installer" "$install_args"
+# 
 Function Instal-Ap($dir_installer, $install_args) {
     Write-Host "Installing $dir_installer ..."
     
@@ -189,9 +194,6 @@ Function Instal-Ap($dir_installer, $install_args) {
 
     Write-Host "... Done Installing $dir_installer"
 }
-# To use,
-# Provide $dir_installer $install_args
-# Instal-Ap $dir_installer $install_args
 
 
 
