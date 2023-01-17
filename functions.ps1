@@ -146,9 +146,9 @@ Function Creat-NewEmpty-Folde($path_folder) {
 # Download App
 # 
 # Usage
-# Downloa-Ap "$url" "$dir_installer"
+# Downloa-Installe "$url" "$dir_installer"
 # 
-Function Downloa-Ap($url, $dir_installer) {
+Function Downloa-Installe($url, $dir_installer) {
     Write-Host "Downloading $dir_installer ...."
 
     # Create new folder
