@@ -50,6 +50,31 @@ function autodetectArchitecture() {
 
 
 
+# Compare OS / Get OS
+# 
+# Usage
+# meetMinOS "$requiredver"
+# 
+function meetMinOS() {
+
+    # Get current OS version
+    currentver="$(sw_vers -productVersion)"
+
+    # State required minimum OS
+    # $requiredver get from parameter $1
+    # requiredver="10.13.6"
+
+    # Check
+    if [ "$(printf '%s\n' "$requiredver" "$currentver" | sort -V | head -n1)" = "$requiredver" ]; then 
+        echo "Greater than or equal to ${requiredver}"
+    else
+        echo "Less than ${requiredver}"
+    fi
+
+}
+
+
+
 # Create Folder, preventing error if exist
 # 
 # Usage
@@ -137,27 +162,5 @@ function dmgInstallApp() {
 
 
 
-# Compare macOS version
-# 
-# Usage
-# meetMinOS "$requiredver"
-# 
-function meetMinOS() {
-
-    # Get current OS version
-    currentver="$(sw_vers -productVersion)"
-
-    # State required minimum OS
-    # $requiredver get from parameter $1
-    # requiredver="10.13.6"
-
-    # Check
-    if [ "$(printf '%s\n' "$requiredver" "$currentver" | sort -V | head -n1)" = "$requiredver" ]; then 
-        echo "Greater than or equal to ${requiredver}"
-    else
-        echo "Less than ${requiredver}"
-    fi
-
-}
-
+# Appendix
 
