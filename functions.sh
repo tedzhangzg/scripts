@@ -155,17 +155,35 @@ function installAppPKG() {
 # dmgCopyApp "$dir_installer" "$name_vol_specific"
 # 
 function dmgCopyApp() {
-    hdiutil attach -quiet -nobrowse -noverify "$1/$(ls $1 | egrep '\.dmg$')"
+    echo "Copying app in dmg ..."
+
+    # Get dmg name
+    filename_dmg=$(ls $1 | egrep '\.dmg$')
+
+    # Mount dmg
+    hdiutil attach -quiet -nobrowse -noverify "$1/$filename_dmg"
+
+    # Get volume name of mounted dmg
     if [ "$2" = "" ]
     then
         name_vol="$(ls /Volumes | egrep $1'*')"
     else
         name_vol="$2"
     fi
+
+    # Get app name in volume
     name_app=$(ls "/Volumes/$name_vol" | egrep '\.app$')
+
+    # Copy
     sudo cp -R "/Volumes/$name_vol/$name_app" /Applications
+
+    # Unmount dmg
     hdiutil detach -quiet "/Volumes/$name_vol"
+
+    # Reset variables
     name_vol_specific=""
+
+    echo "... Done copying app in dmg"
 }
 
 
