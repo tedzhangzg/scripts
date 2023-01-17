@@ -40,50 +40,53 @@ Function Clear-WinDefHist() {
 Function Is-Win11() {
     return ([System.Environment]::OSVersion.Version.Build -ge 22000)
 }
+# 
 # Notes
 # [System.Environment]::OSVersion.Version.Major
 # [System.Environment]::OSVersion.Version.Minor
 # [System.Environment]::OSVersion.Version.Build
+# 
 # Versions
-# Windows Server 2022: Major 10, Minor 0, Build 20348
-# Windows Server 2019: Major 10, Minor 0, Build 17763
-# Windows Server 2016: Major 10, Minor 0, Build 14393
-# Windows Server 2012 R2: Major 6, Minor 3, Build 9600
-# Windows Server 2012: Major 6, Minor 2, Build 9200
-# Windows Server 2008 R2 SP1: Major 6, Minor 1, Build 7601
-# Windows Server 2008 R2: Major 6, Minor 1, Build 7600
-# Windows Server 2008 SP2 Update Rollup: Major 6, Minor 0, Build 6003
-# Windows Server 2008 SP2: Major 6, Minor 0, Build 6002
-# Windows Server 2008: Major 6, Minor 0, Build 6001
-# Windows Server 2003 R2: Major 5, Minor 2, Build 3790
-# Windows Server 2003 SP2: Major 5, Minor 2, Build 3790
-# Windows Server 2000: Major 5, Minor 0, Build 2195
-# Windows 11 22H2: Major 10, Minor 0, Build 22621
-# Windows 11 21H2: Major 10, Minor 0, Build 22000
-# Windows 10 22H2: Major 10, Minor 0, Build 19045
-# Windows 10 21H2: Major 10, Minor 0, Build 19044
-# Windows 10 21H1: Major 10, Minor 0, Build 19043
-# Windows 10 20H2: Major 10, Minor 0, Build 19042
-# Windows 10 2004: Major 10, Minor 0, Build 19041
-# Windows 10 1909: Major 10, Minor 0, Build 18363
-# Windows 10 1903: Major 10, Minor 0, Build 18362
-# Windows 10 1809: Major 10, Minor 0, Build 17763
-# Windows 10 1803: Major 10, Minor 0, Build 17134
-# Windows 10 1709: Major 10, Minor 0, Build 16299
-# Windows 10 1703: Major 10, Minor 0, Build 15063
-# Windows 10 1607: Major 10, Minor 0, Build 14393
-# Windows 10 1511: Major 10, Minor 0, Build 10586
-# Windows 10 1507: Major 10, Minor 0, Build 10240
-# Windows 8.1 Update: Major 6, Minor 3, Build 9600
-# Windows 8.1: Major 6, Minor 3, Build 9200
-# Windows 8: Major 6, Minor 2, Build 9200
-# Windows 7 SP1: Major 6, Minor 1, Build 7601
-# Windows 7: Major 6, Minor 1, Build 7600
-# Windows Vista SP2: Major 6, Minor 0, Build 6002
-# Windows Vista SP1: Major 6, Minor 0, Build 6001
-# Windows Vista: Major 6, Minor 0, Build 6000
-# Windows XP SP3: Major 5, Minor 1, Build 2600
-# Windows 2000 SP4: Major 5, Minor 0, Build 2195
+# Windows Server 2022: 10, 0, 20348
+# Windows Server 2019: 10, 0, 17763
+# Windows Server 2016: 10, 0, 14393
+# Windows Server 2012 R2: 6, 3, 9600
+# Windows Server 2012: 6, 2, 9200
+# Windows Server 2008 R2 SP1: 6, 1, 7601
+# Windows Server 2008 R2: 6, 1, 7600
+# Windows Server 2008 SP2 Update Rollup: 6, 0, 6003
+# Windows Server 2008 SP2: 6, 0, 6002
+# Windows Server 2008: 6, 0, 6001
+# Windows Server 2003 R2: 5, 2, 3790
+# Windows Server 2003 SP2: 5, 2, 3790
+# Windows Server 2000: 5, 0, 2195
+# Windows 11 22H2: 10, 0, 22621
+# Windows 11 21H2: 10, 0, 22000
+# Windows 10 22H2: 10, 0, 19045
+# Windows 10 21H2: 10, 0, 19044
+# Windows 10 21H1: 10, 0, 19043
+# Windows 10 20H2: 10, 0, 19042
+# Windows 10 2004: 10, 0, 19041
+# Windows 10 1909: 10, 0, 18363
+# Windows 10 1903: 10, 0, 18362
+# Windows 10 1809: 10, 0, 17763
+# Windows 10 1803: 10, 0, 17134
+# Windows 10 1709: 10, 0, 16299
+# Windows 10 1703: 10, 0, 15063
+# Windows 10 1607: 10, 0, 14393
+# Windows 10 1511: 10, 0, 10586
+# Windows 10 1507: 10, 0, 10240
+# Windows 8.1 Update: 6, 3, 9600
+# Windows 8.1: 6, 3, 9200
+# Windows 8: 6, 2, 9200
+# Windows 7 SP1: 6, 1, 7601
+# Windows 7: 6, 1, 7600
+# Windows Vista SP2: 6, 0, 6002
+# Windows Vista SP1: 6, 0, 6001
+# Windows Vista: 6, 0, 6000
+# Windows XP SP3: 5, 1, 2600
+# Windows 2000 SP4: 5, 0, 2195
+# 
 # Check if Server or Desktop
 # (Get-CimInstance -ClassName "Win32_OperatingSystem").ProductType
 # (Get-WmiObject -Class "Win32_OperatingSystem").ProductType
