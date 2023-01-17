@@ -127,9 +127,9 @@ function downloadInstaller() {
 # Install App pkg
 # 
 # Usage
-# installAppPKG "$dir_installer"
+# pkgInstall "$dir_installer"
 # 
-function installAppPKG() {
+function pkgInstall() {
     echo "Installing $1 ..."
     
     # cd
