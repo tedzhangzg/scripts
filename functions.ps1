@@ -7,28 +7,36 @@
 
 
 # Clear Powershell History
+# 
+# Usage
+# Clear-PSHistory
+# 
 Function Clear-PSHistory() {
     if (Test-Path -Path (Get-PSReadlineOption).HistorySavePath) {
         Remove-Item -Path $(Split-Path -Path (Get-PSReadlineOption).HistorySavePath -Parent) -Recurse
     }
     Write-Host "Powershell history cleared."
 }
-# To use,
-# Just call function
 
 
 
 # Clear Windows Defender History
+# 
+# Usage
+# Clear-WinDefHist
+# 
 Function Clear-WinDefHist() {
     Set-MpPreference -ScanPurgeItemsAfterDelay 1
     Get-ChildItem -Path "$env:ProgramData\Microsoft\Windows Defender\Scans\History\Service" -Recurse | Remove-Item -Recurse -Force
 }
-# To use,
-# Just call function
 
 
 
 # Check Windows 11
+# 
+# Usage
+# Is-Win11
+# 
 Function Is-Win11() {
     return ([System.Environment]::OSVersion.Version.Build -ge 22000)
 }
@@ -79,8 +87,6 @@ Function Is-Win11() {
 # Check if Server or Desktop
 # (Get-CimInstance -ClassName "Win32_OperatingSystem").ProductType
 # (Get-WmiObject -Class "Win32_OperatingSystem").ProductType
-# To use,
-# Just call function
 
 
 
