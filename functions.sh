@@ -9,6 +9,10 @@
 
 
 # Clear Terminal History
+# 
+# Usage
+# clearTerminalHistory
+# 
 function clearTerminalHistory() {
     sudo rm -rf /var/root/.bash_history
     rm -rf $HOME/.bash_history
@@ -18,6 +22,10 @@ function clearTerminalHistory() {
 
 
 # Get archi, even Rosetta emulation
+# 
+# Usage
+# autodetectArchitecture
+# 
 function autodetectArchitecture() {
     
     # Using UNIX uname
@@ -57,10 +65,22 @@ function createNewEmptyFolder() {
 
 
 
-# Download .pkg, Install .pkg
+# Get URL from brew'
 # 
 # Usage
-# pkgDownloadInstall "$link_to_pkg"
+# getURLFromBrew "$brew_cask_name"
+# 
+function getURLFromBrew() {
+    url_from_brew_jsonfile=$(curl -s 'https://formulae.brew.sh/api/cask/google-chrome.json' | python3 -c "import sys, json; print(json.load(sys.stdin)['url'])")
+    echo $url_from_brew_jsonfile
+}
+
+
+
+# Download .pkg to $HOME/Downloads, Install .pkg, Remove .pkg
+# 
+# Usage
+# pkgDownloadInstall "$url_pkg"
 # 
 function pkgDownloadInstall() {
     pushd ~/Downloads
@@ -72,7 +92,7 @@ function pkgDownloadInstall() {
 
 
 
-# Mount .dmg, Copy .app into /Applications
+# Mount .dmg, Copy .app into /Applications, Unmount .dmg
 # 
 # Usage
 # dmgCopyApp "$dir_installer" "$name_vol_specific"
@@ -93,7 +113,7 @@ function dmgCopyApp() {
 
 
 
-# Mount .dmg, Open .app to install
+# Mount .dmg, Install .app, Unmount .dmg
 # 
 # Usage
 # dmgInstallApp "$dir_installer" "$name_vol_specific"
@@ -117,12 +137,17 @@ function dmgInstallApp() {
 
 
 # Compare macOS version
+# 
+# Usage
+# meetMinOS "$requiredver"
+# 
 function meetMinOS() {
 
     # Get current OS version
     currentver="$(sw_vers -productVersion)"
 
     # State required minimum OS
+    # $requiredver get from parameter $1
     # requiredver="10.13.6"
 
     # Check
