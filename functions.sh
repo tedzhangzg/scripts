@@ -157,7 +157,7 @@ function installAppPKG() {
 function dmgCopyApp() {
     echo "Copying app in dmg ..."
 
-    # Get dmg name
+    # Get dmg filename
     filename_dmg=$(ls $1 | egrep '\.dmg$')
 
     # Mount dmg
@@ -194,19 +194,40 @@ function dmgCopyApp() {
 # dmgInstallApp "$dir_installer" "$name_vol_specific"
 # 
 function dmgInstallApp() {
-    hdiutil attach -quiet -nobrowse -noverify "$1/$(ls $1 | egrep '\.dmg$')"
+    echo "Installing app in dmg ..."
+
+    # Get dmg filename
+    filename_dmg=$(ls $1 | egrep '\.dmg$')
+
+    # Mount dmg
+    hdiutil attach -quiet -nobrowse -noverify "$1/$filename_dmg"
+
+    # Get volume name of mounted dmg
     if [ "$2" = "" ]
     then
         name_vol="$(ls /Volumes | egrep $1'*')"
     else
         name_vol="$2"
     fi
+
+    # Get app name in volume
     name_app=$(ls "/Volumes/$name_vol" | egrep '\.app$')
+
+    # Get executable name inside .app/Contents/MacOS
     name_executable=$(ls /Volumes/$name_vol/$name_app/Contents/MacOS)
+
+    # Install
     sudo /Volumes/$name_vol/$name_app/Contents/MacOS/name_executable
+    # For some older apps, install by running .app like in GUI
     # open "/Volumes/$name_vol/$name_app"
+
+    # Unmount dmg
     hdiutil detach -quiet "/Volumes/$name_vol"
+
+    # Reset variables
     name_vol_specific=""
+
+    echo "... Done installing app in dmg"
 }
 
 
