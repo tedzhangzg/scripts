@@ -115,11 +115,11 @@ function downloadInstaller() {
     createNewEmptyFolder "$2"
     
     # Download
-    pushd $2
+    pushd "$2"
     curl -L -O "$1"
     popd
     
-    echo "... Done Downloading $2"
+    echo "... Done downloading $2"
 }
 
 
@@ -133,7 +133,7 @@ function pkgInstall() {
     echo "Installing $1 ..."
 
     # Get name
-    pkgName=$(ls "$1" | egrep '\.pkg$')
+    pkgName="$(ls $1 | egrep '\.pkg$')"
 
     # Install
     sudo installer -pkg "$1/$pkgName" -target /
@@ -169,7 +169,7 @@ function dmgCopyApp() {
     name_app=$(ls "/Volumes/$name_vol" | egrep '\.app$')
 
     # Copy
-    sudo cp -R "/Volumes/$name_vol/$name_app" /Applications
+    sudo cp -R "/Volumes/$name_vol/$name_app" "/Applications"
 
     # Unmount dmg
     hdiutil detach -quiet "/Volumes/$name_vol"
@@ -208,10 +208,10 @@ function dmgInstallApp() {
     name_app=$(ls "/Volumes/$name_vol" | egrep '\.app$')
 
     # Get executable name inside .app/Contents/MacOS
-    name_executable=$(ls /Volumes/$name_vol/$name_app/Contents/MacOS)
+    name_executable=$(ls "/Volumes/$name_vol/$name_app/Contents/MacOS")
 
     # Install
-    sudo /Volumes/$name_vol/$name_app/Contents/MacOS/name_executable
+    sudo "/Volumes/$name_vol/$name_app/Contents/MacOS/name_executable"
     # For some older apps, install by running .app like in GUI
     # open "/Volumes/$name_vol/$name_app"
 
