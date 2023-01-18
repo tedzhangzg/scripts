@@ -12,6 +12,9 @@
 
 
 
+# Visual Studio Code
+url_vscode="https://code.visualstudio.com/sha/download?build=stable&os=darwin-universal"
+
 # Microsoft Edge
 url_microsoft_edge="https://go.microsoft.com/fwlink/?linkid=2069148"
 
