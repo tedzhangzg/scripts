@@ -78,7 +78,7 @@ function meetMinOS() {
 # Get URL from brew JSON file
 # 
 # Usage
-# getURLFromBrew "$brew_cask_name"
+# getURLFromBrew "$app_brewname"
 # 
 function getURLFromBrew() {
     url_json_file="https://formulae.brew.sh/api/cask/$1.json"
