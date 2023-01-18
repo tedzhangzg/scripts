@@ -149,6 +149,35 @@ function pkgInstall() {
 
 
 
+
+# Unzip, Copy .app into /Applications
+# 
+# Usage
+# uncompressFileCopyApp "$dir_installer"
+# 
+function uncompressFileCopyApp() {
+    echo "Installing $1 ..."
+
+    # cd
+    pushd "$1"
+
+    # Get name
+    compressedFileName="$(ls | egrep '\.zip$')"
+
+    # Install
+    unzip $compressedFileName -d /Applications
+
+    # cd
+    popd
+
+    echo "... Done Installing $1"
+}
+
+
+
+
+
+
 # Mount .dmg, Copy .app into /Applications, Unmount .dmg
 # 
 # Usage
