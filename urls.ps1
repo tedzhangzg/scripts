@@ -66,6 +66,7 @@ $url_wsl2kernel = "https://wslstorestorage.blob.core.windows.net/wslblob/wsl_upd
 # Visual Studio Code
 $url_vscode_x86 = "https://code.visualstudio.com/sha/download?build=stable&os=win32"
 $url_vscode_x64 = "https://code.visualstudio.com/sha/download?build=stable&os=win32-x64"
+$url_vscode_a64 = "https://code.visualstudio.com/sha/download?build=stable&os=win32-arm64-user"
 
 # Windows Essentials 2012
 $url_winessentials_2012 = "https://archive.org/download/wlsetup-all_201802/wlsetup-all.exe"
