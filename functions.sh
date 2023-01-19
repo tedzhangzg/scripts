@@ -195,19 +195,19 @@ function dmgCopyApp() {
     # Get volume name of mounted dmg
     if [ "$2" = "" ]
     then
-        name_vol="$(ls /Volumes | egrep $1'*')"
+        name_vol_final="$(ls /Volumes | egrep $1'*')"
     else
-        name_vol="$2"
+        name_vol_final="$2"
     fi
 
     # Get app name in volume
-    name_app=$(ls "/Volumes/$name_vol" | egrep '\.app$')
+    name_app=$(ls "/Volumes/$name_vol_final" | egrep '\.app$')
 
     # Copy
-    sudo cp -R "/Volumes/$name_vol/$name_app" "/Applications"
+    sudo cp -R "/Volumes/$name_vol_final/$name_app" "/Applications"
 
     # Unmount dmg
-    hdiutil detach -quiet "/Volumes/$name_vol"
+    hdiutil detach -quiet "/Volumes/$name_vol_final"
 
     # Reset variables
     name_vol_partial=""
@@ -234,24 +234,24 @@ function dmgInstallApp() {
     # Get volume name of mounted dmg
     if [ "$2" = "" ]
     then
-        name_vol="$(ls /Volumes | egrep $1'*')"
+        name_vol_final="$(ls /Volumes | egrep $1'*')"
     else
-        name_vol="$2"
+        name_vol_final="$2"
     fi
 
     # Get app name in volume
-    name_app=$(ls "/Volumes/$name_vol" | egrep '\.app$')
+    name_app=$(ls "/Volumes/$name_vol_final" | egrep '\.app$')
 
     # Get executable name inside .app/Contents/MacOS
-    name_executable=$(ls "/Volumes/$name_vol/$name_app/Contents/MacOS")
+    name_executable=$(ls "/Volumes/$name_vol_final/$name_app/Contents/MacOS")
 
     # Install
-    sudo "/Volumes/$name_vol/$name_app/Contents/MacOS/name_executable"
+    sudo "/Volumes/$name_vol_final/$name_app/Contents/MacOS/name_executable"
     # For some older apps, install by running .app like in GUI
-    # open "/Volumes/$name_vol/$name_app"
+    # open "/Volumes/$name_vol_final/$name_app"
 
     # Unmount dmg
-    hdiutil detach -quiet "/Volumes/$name_vol"
+    hdiutil detach -quiet "/Volumes/$name_vol_final"
 
     # Reset variables
     name_vol_partial=""
