@@ -189,7 +189,7 @@ function dmgCopyApp() {
     hdiutil attach -quiet -nobrowse -noverify "$1/$filename_dmg"
 
     # Get volume name of mounted dmg
-    name_vol_final="$(ls /Volumes | egrep '*'$2'*')"
+    name_vol_final="$(ls /Volumes | egrep $2)"
 
     # Get app name in volume
     name_app=$(ls "/Volumes/$name_vol_final" | egrep '\.app$')
@@ -220,7 +220,7 @@ function dmgInstallApp() {
     hdiutil attach -quiet -nobrowse -noverify "$1/$filename_dmg"
 
     # Get volume name of mounted dmg
-    name_vol_final="$(ls /Volumes | egrep '*'$2'*')"
+    name_vol_final="$(ls /Volumes | egrep $2)"
 
     # Get app name in volume
     name_app=$(ls "/Volumes/$name_vol_final" | egrep '\.app$')
