@@ -181,7 +181,7 @@ function uncompressFileCopyApp() {
 # Mount .dmg, Copy .app into /Applications, Unmount .dmg
 # 
 # Usage
-# dmgCopyApp "$dir_installer" "$name_vol_specific"
+# dmgCopyApp "$dir_installer" "$name_vol_partial"
 # 
 function dmgCopyApp() {
     echo "Copying app in dmg ..."
@@ -210,7 +210,7 @@ function dmgCopyApp() {
     hdiutil detach -quiet "/Volumes/$name_vol"
 
     # Reset variables
-    name_vol_specific=""
+    name_vol_partial=""
 
     echo "... Done copying app in dmg"
 }
@@ -220,7 +220,7 @@ function dmgCopyApp() {
 # Mount .dmg, Install .app, Unmount .dmg
 # 
 # Usage
-# dmgInstallApp "$dir_installer" "$name_vol_specific"
+# dmgInstallApp "$dir_installer" "$name_vol_partial"
 # 
 function dmgInstallApp() {
     echo "Installing app in dmg ..."
@@ -254,7 +254,7 @@ function dmgInstallApp() {
     hdiutil detach -quiet "/Volumes/$name_vol"
 
     # Reset variables
-    name_vol_specific=""
+    name_vol_partial=""
 
     echo "... Done installing app in dmg"
 }
