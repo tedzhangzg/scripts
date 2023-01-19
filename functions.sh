@@ -149,7 +149,6 @@ function pkgInstall() {
 
 
 
-
 # Unzip, Copy .app into /Applications
 # 
 # Usage
@@ -172,9 +171,6 @@ function uncompressFileCopyApp() {
 
     echo "... Done Installing $1"
 }
-
-
-
 
 
 
