@@ -174,7 +174,7 @@ function uncompressFileCopyApp() {
 
 
 
-# Mount .dmg, Install .pkg inside .dmg, Unmount .dmg
+# Mount .dmg, Install .pkg at root of .dmg, Unmount .dmg
 # 
 # Usage
 # dmgInstallPkgAtRoot "$dir_installer" "$name_vol_partial"
@@ -199,6 +199,42 @@ function dmgInstallPkgAtRoot() {
 
     echo "... Done installing $1"
 }
+
+
+
+# Mount .dmg, Install .pkg at .app/Contents/Resources of .dmg, Unmount .dmg
+# 
+# Usage
+# dmgInstallPkgAtAppcontres "$dir_installer" "$name_vol_partial"
+# 
+function dmgInstallPkgAtAppcontres() {
+    echo "Installing $1 ..."
+
+    # Get dmg filename
+    filename_dmg="$(ls $1 | egrep '\.dmg$')"
+
+    # Mount dmg
+    hdiutil attach -quiet -nobrowse -noverify "$1/$filename_dmg"
+
+    # Get volume name of mounted dmg
+    name_vol_final="$(ls /Volumes | egrep $2)"
+
+    # Get app name in volume
+    name_app=$(ls "/Volumes/$name_vol_final" | egrep '\.app$')
+
+    # Install
+    dir_pkgfile="/Volumes/$name_vol_final/$name_app/Contents/Resources"
+    pkgInstall "$dir_pkgfile"
+
+    # Unmount dmg
+    hdiutil detach -quiet "/Volumes/$name_vol_final"
+
+    echo "... Done installing $1"
+}
+
+
+
+
 
 
 
