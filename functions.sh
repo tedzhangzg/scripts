@@ -296,12 +296,12 @@ function dmgInstallApp() {
     name_app=$(ls "/Volumes/$name_vol_final" | egrep '\.app$')
 
     # Get executable name inside .app/Contents/MacOS
-    name_executable=$(ls "/Volumes/$name_vol_final/$name_app/Contents/MacOS")
+    name_executable="$(ls "/Volumes/$name_vol_final/$name_app/Contents/MacOS" | grep $name_vol_partial)"
 
     # Install
-    sudo "/Volumes/$name_vol_final/$name_app/Contents/MacOS/name_executable"
-    # For some older apps, install by running .app like in GUI
-    # open "/Volumes/$name_vol_final/$name_app"
+    sudo "/Volumes/$name_vol_final/$name_app/Contents/MacOS/$name_executable"
+    # For some apps, install by running .app like in GUI
+    # sudo open "/Volumes/$name_vol_final/$name_app"
 
     # Unmount dmg
     hdiutil detach -quiet "/Volumes/$name_vol_final"
