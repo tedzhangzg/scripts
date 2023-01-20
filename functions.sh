@@ -144,7 +144,7 @@ function pkgInstall() {
     # cd
     popd
 
-    echo "... Done Installing $1"
+    echo "... Done installing $1"
 }
 
 
@@ -169,7 +169,7 @@ function uncompressFileCopyApp() {
     # cd
     popd
 
-    echo "... Done Installing $1"
+    echo "... Done installing $1"
 }
 
 
@@ -180,7 +180,7 @@ function uncompressFileCopyApp() {
 # dmgCopyApp "$dir_installer" "$name_vol_partial"
 # 
 function dmgCopyApp() {
-    echo "Copying app in dmg ..."
+    echo "Installing $1 ..."
 
     # Get dmg filename
     filename_dmg="$(ls $1 | egrep '\.dmg$')"
@@ -206,7 +206,7 @@ function dmgCopyApp() {
     # Unmount dmg
     hdiutil detach -quiet "/Volumes/$name_vol_final"
 
-    echo "... Done copying app in dmg"
+    echo "... Done installing $1"
 }
 
 
@@ -217,7 +217,7 @@ function dmgCopyApp() {
 # dmgInstallApp "$dir_installer" "$name_vol_partial"
 # 
 function dmgInstallApp() {
-    echo "Installing app in dmg ..."
+    echo "Installing $1 ..."
 
     # Get dmg filename
     filename_dmg="$(ls $1 | egrep '\.dmg$')"
@@ -242,7 +242,7 @@ function dmgInstallApp() {
     # Unmount dmg
     hdiutil detach -quiet "/Volumes/$name_vol_final"
 
-    echo "... Done installing app in dmg"
+    echo "... Done installing $1"
 }
 
 
