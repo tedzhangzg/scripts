@@ -197,7 +197,7 @@ function dmgCopyApp() {
     # Delete app in /Applications if app exist
     if [ -d "/Applications/$name_app/Contents" ]
     then
-        sudo rm -rf /Applications/$name_app
+        sudo rm -rf "/Applications/$name_app"
     fi
 
     # Copy
