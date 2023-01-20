@@ -191,11 +191,8 @@ function dmgInstallPkg() {
     # Get volume name of mounted dmg
     name_vol_final="$(ls /Volumes | egrep $2)"
 
-    # Get app name in volume
-    name_pkg=$(ls "/Volumes/$name_vol_final" | egrep '\.pkg$')
-
     # Install
-    pkgInstall "$1"
+    pkgInstall "/Volumes/$name_vol_final"
 
     # Unmount dmg
     hdiutil detach -quiet "/Volumes/$name_vol_final"
