@@ -195,7 +195,7 @@ function dmgCopyApp() {
     name_app=$(ls "/Volumes/$name_vol_final" | egrep '\.app$')
 
     # Delete app in /Applications if app exist
-    if [ -d /Applications/$name_app/Contents ]
+    if [ -d "/Applications/$name_app/Contents" ]
     then
         sudo rm -rf /Applications/$name_app
     fi
