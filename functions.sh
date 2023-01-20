@@ -164,7 +164,7 @@ function uncompressFileCopyApp() {
     compressedFileName="$(ls | egrep '\.zip$')"
 
     # Install
-    unzip $compressedFileName -d /Applications
+    unzip -q $compressedFileName -d /Applications
 
     # cd
     popd
