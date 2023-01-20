@@ -177,9 +177,9 @@ function uncompressFileCopyApp() {
 # Mount .dmg, Install .pkg inside .dmg, Unmount .dmg
 # 
 # Usage
-# dmgInstallPkg "$dir_installer" "$name_vol_partial"
+# dmgInstallPkgAtRoot "$dir_installer" "$name_vol_partial"
 # 
-function dmgInstallPkg() {
+function dmgInstallPkgAtRoot() {
     echo "Installing $1 ..."
 
     # Get dmg filename
