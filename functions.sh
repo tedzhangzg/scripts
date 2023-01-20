@@ -21,12 +21,12 @@ function clearTerminalHistory() {
 
 
 
-# Get archi, even Rosetta emulation
+# Autodetect processor Architecture, even Rosetta emulation
 # 
 # Usage
-# autodetectArchitecture
+# autodetectProcessorArchitecture
 # 
-function autodetectArchitecture() {
+function autodetectProcessorArchitecture() {
     
     # Using UNIX uname
     arch_name="$(uname -m)"
