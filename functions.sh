@@ -174,6 +174,37 @@ function uncompressFileCopyApp() {
 
 
 
+# Mount .dmg, Install .pkg inside .dmg, Unmount .dmg
+# 
+# Usage
+# dmgInstallPkg "$dir_installer" "$name_vol_partial"
+# 
+function dmgInstallPkg() {
+    echo "Installing $1 ..."
+
+    # Get dmg filename
+    filename_dmg="$(ls $1 | egrep '\.dmg$')"
+
+    # Mount dmg
+    hdiutil attach -quiet -nobrowse -noverify "$1/$filename_dmg"
+
+    # Get volume name of mounted dmg
+    name_vol_final="$(ls /Volumes | egrep $2)"
+
+    # Get app name in volume
+    name_pkg=$(ls "/Volumes/$name_vol_final" | egrep '\.pkg$')
+
+    # Install
+    pkgInstall "$1"
+
+    # Unmount dmg
+    hdiutil detach -quiet "/Volumes/$name_vol_final"
+
+    echo "... Done installing $1"
+}
+
+
+
 # Mount .dmg, Copy .app into /Applications, Unmount .dmg
 # 
 # Usage
