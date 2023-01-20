@@ -177,7 +177,7 @@ function uncompressFileCopyApp() {
 # Mount .dmg, Install .pkg at root of .dmg, Unmount .dmg
 # 
 # Usage
-# dmgInstallPkgAtRoot "$dir_installer" "$name_vol_partial"
+# dmgInstallPkgAtRoot "$dir_installer" "$app_name_partial"
 # 
 function dmgInstallPkgAtRoot() {
     echo "Installing $1 ..."
@@ -205,7 +205,7 @@ function dmgInstallPkgAtRoot() {
 # Mount .dmg, Install .pkg at .app/Contents/Resources of .dmg, Unmount .dmg
 # 
 # Usage
-# dmgInstallPkgAtAppcontres "$dir_installer" "$name_vol_partial"
+# dmgInstallPkgAtAppcontres "$dir_installer" "$app_name_partial"
 # 
 function dmgInstallPkgAtAppcontres() {
     echo "Installing $1 ..."
@@ -241,7 +241,7 @@ function dmgInstallPkgAtAppcontres() {
 # Mount .dmg, Copy .app into /Applications, Unmount .dmg
 # 
 # Usage
-# dmgCopyApp "$dir_installer" "$name_vol_partial"
+# dmgCopyApp "$dir_installer" "$app_name_partial"
 # 
 function dmgCopyApp() {
     echo "Installing $1 ..."
@@ -278,7 +278,7 @@ function dmgCopyApp() {
 # Mount .dmg, Install .app, Unmount .dmg
 # 
 # Usage
-# dmgInstallApp "$dir_installer" "$name_vol_partial"
+# dmgInstallApp "$dir_installer" "$app_name_partial"
 # 
 function dmgInstallApp() {
     echo "Installing $1 ..."
@@ -296,7 +296,7 @@ function dmgInstallApp() {
     name_app=$(ls "/Volumes/$name_vol_final" | egrep '\.app$')
 
     # Get executable name inside .app/Contents/MacOS
-    name_executable="$(ls "/Volumes/$name_vol_final/$name_app/Contents/MacOS" | grep $name_vol_partial)"
+    name_executable="$(ls "/Volumes/$name_vol_final/$name_app/Contents/MacOS" | grep $app_name_partial)"
 
     # Install
     sudo "/Volumes/$name_vol_final/$name_app/Contents/MacOS/$name_executable"
