@@ -85,8 +85,8 @@ $url_java_8_x86 = "https://javadl.oracle.com/webapps/download/GetFile/1.8.0_361-
 $url_java_8_x64 = "https://javadl.oracle.com/webapps/download/GetFile/1.8.0_361-b09/0ae14417abb444ebb02b9815e2103550/windows-i586/jre-8u361-windows-x64.exe"
 $url_java_10 = "https://javadl.oracle.com/webapps/download/GetFile/10.0.2+13/19aef61b38124481863b1413dce1855f/windows-i586/jre-10.0.2_windows-x64_bin.exe"
 # Java JDK
-$url_java_11 = ""
-$url_java_17 = "https://download.oracle.com/java/17/latest/jdk-17_windows-x64_bin.exe"
+$url_java_11 = "https://cfdownload.adobe.com/pub/adobe/coldfusion/java/java11/java11018/jdk-11.0.18_windows-x64_bin.exe"
+$url_java_17 = "https://download.oracle.com/java/17/archive/jdk-17.0.6_windows-x64_bin.exe"
 
 # Office 2013 ODT
 $url_odt_2013 = "https://download.microsoft.com/download/6/2/3/6230F7A2-D8A9-478B-AC5C-57091B632FCF/officedeploymenttool_x86_5031-1000.exe"
