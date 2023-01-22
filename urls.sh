@@ -41,7 +41,7 @@ url_zoom="https://zoom.us/client/latest/Zoom.pkg"
 url_teamviewerqs_13="https://download.teamviewer.com/download/version_13x/TeamViewerQS.dmg"
 
 # Java JRE
-url_java_8="https://javadl.oracle.com/webapps/download/GetFile/1.8.0_351-b10/10e8cce67c7843478f41411b7003171c/unix-i586/jre-8u351-macosx-x64.dmg"
+url_java_8="https://javadl.oracle.com/webapps/download/GetFile/1.8.0_361-b09/0ae14417abb444ebb02b9815e2103550/unix-i586/jre-8u361-macosx-x64.dmg"
 url_java_10="https://javadl.oracle.com/webapps/download/GetFile/10.0.2+13/19aef61b38124481863b1413dce1855f/unix-i586/jre-10.0.2_osx-x64_bin.dmg"
 
 # Java JDK
