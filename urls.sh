@@ -45,9 +45,9 @@ url_java_8="https://javadl.oracle.com/webapps/download/GetFile/1.8.0_361-b09/0ae
 url_java_10="https://javadl.oracle.com/webapps/download/GetFile/10.0.2+13/19aef61b38124481863b1413dce1855f/unix-i586/jre-10.0.2_osx-x64_bin.dmg"
 
 # Java JDK
-url_java_11=""
-url_java_17_a64="https://download.oracle.com/java/17/latest/jdk-17_macos-aarch64_bin.dmg"
-url_java_17_x64="https://download.oracle.com/java/17/latest/jdk-17_macos-x64_bin.dmg"
+url_java_11="https://cfdownload.adobe.com/pub/adobe/coldfusion/java/java11/java11018/jdk-11.0.18_macos-x64_bin.dmg"
+url_java_17_a64="https://download.oracle.com/java/17/archive/jdk-17.0.6_macos-aarch64_bin.dmg"
+url_java_17_x64="https://download.oracle.com/java/17/archive/jdk-17.0.6_macos-x64_bin.dmg"
 
 # Mozilla Firefox
 url_firefox="https://download.mozilla.org/?product=firefox-latest-ssl&os=osx"
