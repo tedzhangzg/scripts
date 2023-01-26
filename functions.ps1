@@ -96,13 +96,38 @@ Function Is-Win11() {
 # Get URL from winget
 # 
 # Usage
-# Get-URL-FromWinget "$app_wgname"
+# Get-URL-FromWinget "$app_wgname" "$app_architecture"
 # 
 # Useful for manual install or when hash isn't updated in manifest
-Function Get-URL-FromWinget($app_wgname) {
+Function Get-URL-FromWinget($app_wgname, $app_architecture) {
 
     # winget show - return array
-    $arr_wgshow = $(winget show --id $app_wgname)
+    switch ($app_architecture) {
+        "arch_unspecified" {
+            # blank input
+            $arr_wgshow = $(winget show --id $app_wgname)
+            # Done
+            break
+        }
+        "x64" {
+            # x64
+            $arr_wgshow = $(winget show --id $app_wgname -a "x64")
+            # Done
+            break
+        }
+        "x86" {
+            # x86
+            $arr_wgshow = $(winget show --id $app_wgname -a "x86")
+            # Done
+            break
+        }
+        default {
+            # Default
+            Write-Host "Architecture not found"
+            exit
+            break
+        }
+    }
 
     # Search array for "Installer Url" - return 1-element array
     $arr_wgshow_url = $arr_wgshow -match "Installer Url"
