@@ -111,7 +111,7 @@ Function Get-URL-FromWinget($app_wgname) {
     # $str_element = $arr_wgshow_url[0]
 
     # Get element of array with Installer Url
-    str_element = $($arr_wgshow -match "Installer Url")[0]
+    $str_element = $($arr_wgshow -match "Installer Url")[0]
 
     # Get URL
     $url = $str_element.Substring($str_element.IndexOf(": ") + 2)
