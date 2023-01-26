@@ -32,6 +32,79 @@ Function Clear-WinDefHist() {
 
 
 
+# Autodetect processor Architecture, even Rosetta emulation
+# 
+# Usage
+# Autodetect-ProcessorArchitecture
+# 
+Function Autodetect-ProcessorArchitecture() {
+
+    # Get from API
+    $val_cimwin32proc_arch = $(Get-WmiObject -Class "Win32_Processor").Architecture
+
+    # Interpret value
+    switch ($val_cimwin32proc_arch) {
+        0 {
+            # 0
+            $processorArchitecture = "x86"
+            # Done
+            break
+        }
+        1 {
+            # 1
+            $processorArchitecture = "MIPS"
+            # Done
+            break
+        }
+        2 {
+            # 2
+            $processorArchitecture = "Alpha"
+            # Done
+            break
+        }
+        3 {
+            # 3
+            $processorArchitecture = "PowerPC"
+            # Done
+            break
+        }
+        5 {
+            # 5
+            $processorArchitecture = "ARM"
+            # Done
+            break
+        }
+        6 {
+            # 6
+            $processorArchitecture = "ia64"
+            # Done
+            break
+        }
+        9 {
+            # 9
+            $processorArchitecture = "x64"
+            # Done
+            break
+        }
+        12 {
+            # 12
+            $processorArchitecture = "ARM64"
+            # Done
+            break
+        }
+        default {
+            # Default
+            Write-Host "Unknown architecture: $val_cimwin32proc_arch"
+            break outer
+        }
+    }
+
+    return $processorArchitecture
+
+}
+
+
+
 # Check Windows 11
 # 
 # Usage
