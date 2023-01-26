@@ -101,17 +101,14 @@ Function Is-Win11() {
 # Useful for manual install or when hash isn't updated in manifest
 Function Get-URL-FromWinget($app_wgname) {
 
-    # Winget show info - returns array with elements from each line of winget show
+    # winget show - return array
     $arr_wgshow = $(winget show --id $app_wgname)
 
-    # Get array with element 0 = line with "Download Url"
-    # $arr_wgshow_url = $arr_wgshow -match "Installer Url"
+    # Search array for "Installer Url" - return 1-element array
+    $arr_wgshow_url = $arr_wgshow -match "Installer Url"
 
-    # Get string value from one-element array
-    # $str_element = $arr_wgshow_url[0]
-
-    # Get element of array with Installer Url
-    $str_element = $($arr_wgshow -match "Installer Url")[0]
+    # Get string value from 1-element array
+    $str_element = $arr_wgshow_url[0]
 
     # Get URL
     $url = $str_element.Substring($str_element.IndexOf(": ") + 2)
