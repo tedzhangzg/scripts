@@ -105,6 +105,24 @@ Function Autodetect-ProcessorArchitecture() {
 
 
 
+# Autodetect OS bit
+# 
+# Usage
+# Autodetect-OSBit
+# 
+Function Autodetect-OSBit() {
+
+    # Return
+    if ([Environment]::Is64BitOperatingSystem) {
+        return "x64"
+    } else {
+        return "x86"
+    }
+
+}
+
+
+
 # Check Windows 11
 # 
 # Usage
