@@ -124,8 +124,7 @@ Function Get-URL-FromWinget($app_wgname, $app_architecture) {
         default {
             # Default
             Write-Host "Architecture not found"
-            exit
-            break
+            break outer
         }
     }
 
