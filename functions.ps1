@@ -103,7 +103,7 @@ Function Get-URL-FromWinget($app_wgname, $app_architecture) {
 
     # winget show - return array
     switch ($app_architecture) {
-        "arch_unspecified" {
+        "arch_blank" {
             # blank input
             $arr_wgshow = $(winget show --id $app_wgname)
             # Done
