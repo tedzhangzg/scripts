@@ -32,7 +32,7 @@ Function Clear-WinDefHist() {
 
 
 
-# Autodetect processor Architecture, even Rosetta emulation
+# Autodetect processor Architecture
 # 
 # Usage
 # Autodetect-ProcessorArchitecture
