@@ -105,13 +105,18 @@ Function Get-URL-FromWinget($app_wgname) {
     $arr_wgshow = $(winget show --id $app_wgname)
 
     # Get array with element 0 = line with "Download Url"
-    $arr_wgshow_url = $arr_wgshow -match "Installer Url"
+    # $arr_wgshow_url = $arr_wgshow -match "Installer Url"
 
     # Get string value from one-element array
-    $str_element = $arr_wgshow_url[0]
+    # $str_element = $arr_wgshow_url[0]
+
+    # Get element of array with Installer Url
+    str_element = $($arr_wgshow -match "Installer Url")[0]
 
     # Get URL
     $url = $str_element.Substring($str_element.IndexOf(": ") + 2)
+
+    # Return
     return $url
 
 }
