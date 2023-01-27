@@ -194,8 +194,8 @@ Function Get-URL-FromWinget($app_wgname, $app_architecture) {
 
     # winget show - return array
     switch ($app_architecture) {
-        "x86x64" {
-            # universal x86x64
+        "x64x86" {
+            # universal x64x86
             $arr_wgshow = $(winget show --id $app_wgname)
             # Done
             break
