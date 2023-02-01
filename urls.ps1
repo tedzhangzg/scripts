@@ -51,9 +51,9 @@ $url_vcpp_2012_x86 = "https://download.microsoft.com/download/1/6/B/16B06F60-3B2
 $url_vcpp_2012_x64 = "https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x64.exe"
 $url_vcpp_2013_x86 = "https://aka.ms/highdpimfc2013x86enu"
 $url_vcpp_2013_x64 = "https://aka.ms/highdpimfc2013x64enu"
-$url_vcpp_2015toLatest_x86 = "https://aka.ms/vs/17/release/vc_redist.x86.exe"
-$url_vcpp_2015toLatest_x64 = "https://aka.ms/vs/17/release/vc_redist.x64.exe"
-$url_vcpp_2015toLatest_a64 = "https://aka.ms/vs/17/release/vc_redist.arm64.exe"
+$url_vcpp_2015Plus_x86 = "https://aka.ms/vs/17/release/vc_redist.x86.exe"
+$url_vcpp_2015Plus_x64 = "https://aka.ms/vs/17/release/vc_redist.x64.exe"
+$url_vcpp_2015Plus_a64 = "https://aka.ms/vs/17/release/vc_redist.arm64.exe"
 
 # C++ Runtime v11.0 framework package for Desktop Bridge (Project Centennial)
 $url_cppdb_11_x86 = "https://download.microsoft.com/download/3/B/C/3BC60F47-6A7C-4D46-8CFB-C2E746EF336E/vc_uwpdesktop.110.exe"
