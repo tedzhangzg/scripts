@@ -80,7 +80,7 @@ function meetMinOS() {
 # Get URL from brew JSON file
 # 
 # Usage
-# getURLFromBrew "$app_brewname" "$mode_stdvar
+# getURLFromBrew "$app_brewname" "$archSuffix"
 # 
 function getURLFromBrew() {
 
