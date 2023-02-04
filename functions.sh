@@ -88,11 +88,15 @@ function getURLFromBrew() {
     url_json_file="https://formulae.brew.sh/api/cask/$1.json"
 
     # Determine mode and corresponding URL
-    if [[ "$2" = "standard" ]]
+    if [[ "$2" = "a64x64" ]] || [[ "$2" = "x64" ]]
     then
         url_brew_package=$(curl -s $url_json_file | python3 -c "import sys, json; print(json.load(sys.stdin)['url'])")
-    else
+    elif [[ "$2" = "a64" ]]
+    then
         url_brew_package=$(curl -s $url_json_file | python3 -c "import sys, json; print(json.load(sys.stdin)['variations']['arm64_ventura']['url'])")
+    else
+        # default to
+        url_brew_package=$(curl -s $url_json_file | python3 -c "import sys, json; print(json.load(sys.stdin)['url'])")
     fi
 
     # Print
