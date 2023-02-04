@@ -31,10 +31,11 @@ function autodetectProcessorArchitecture() {
     # Using UNIX uname
     arch_name="$(uname -m)"
     
-    if [ "${arch_name}" = "arm64" ]
+    if [[ "${arch_name}" = "arm64" ]]
     then
         echo "Auto-detect: Native ARM"
-    elif [ "${arch_name}" = "x86_64" ]; then
+    elif [[ "${arch_name}" = "x86_64" ]]
+    then
         # Check if running under Rosetta 2 emulation on ARM
         if [ "$(sysctl -in sysctl.proc_translated)" = "1" ]
         then
@@ -86,7 +87,7 @@ function getURLFromBrew() {
     url_json_file="https://formulae.brew.sh/api/cask/$1.json"
 
     # Determine mode and corresponding URL
-    if [ "$2" = "standard" ]
+    if [[ "$2" = "standard" ]]
     then
         url_brew_package=$(curl -s $url_json_file | python3 -c "import sys, json; print(json.load(sys.stdin)['url'])")
     else
@@ -106,7 +107,7 @@ function getURLFromBrew() {
 # createNewEmptyFolder "$folder_name"
 # 
 function createNewEmptyFolder() {
-    if [ -d "$1" ]
+    if [[ -d "$1" ]]
     then
         rm -rf "$1"
     fi
