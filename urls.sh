@@ -12,6 +12,9 @@
 
 
 
+# Python3
+url_python3="https://www.python.org/ftp/python/3.10.9/python-3.10.9-macos11.pkg"
+
 # Visual Studio Code
 url_vscode="https://code.visualstudio.com/sha/download?build=stable&os=darwin-universal"
 
