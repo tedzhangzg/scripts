@@ -37,7 +37,7 @@ function autodetectProcessorArchitecture() {
     elif [[ "${arch_name}" = "x86_64" ]]
     then
         # Check if running under Rosetta 2 emulation on ARM
-        if [ "$(sysctl -in sysctl.proc_translated)" = "1" ]
+        if [[ "$(sysctl -in sysctl.proc_translated)" = "1" ]]
         then
             echo "Auto-detect: Rosetta 2 emulation on ARM"
         else
