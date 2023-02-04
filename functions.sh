@@ -66,7 +66,8 @@ function meetMinOS() {
     # requiredver="10.13.6"
 
     # Check
-    if [ "$(printf '%s\n' "$requiredver" "$currentver" | sort -V | head -n1)" = "$requiredver" ]; then 
+    if [[ "$(printf '%s\n' "$requiredver" "$currentver" | sort -V | head -n1)" = "$requiredver" ]]
+    then
         echo "Greater than or equal to ${requiredver}"
     else
         echo "Less than ${requiredver}"
