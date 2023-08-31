@@ -95,7 +95,7 @@ $url_javajre_10_x64 = "https://javadl.oracle.com/webapps/download/GetFile/10.0.2
 $url_javajdk_8_x64 = "https://javadl.oracle.com/webapps/download/GetFile/1.8.0_381-b09/8c876547113c4e4aab3c868e9e0ec572/windows-i586/jdk-8u381-windows-x64.exe"
 $url_javajdk_8_x86 = "https://javadl.oracle.com/webapps/download/GetFile/1.8.0_381-b09/8c876547113c4e4aab3c868e9e0ec572/windows-i586/jdk-8u381-windows-i586.exe"
 $url_javajdk_10_x64 = "https://javadl.oracle.com/webapps/download/GetFile/10.0.2+13/19aef61b38124481863b1413dce1855f/windows-i586/jdk-10.0.2_windows-x64_bin.exe"
-$url_java_11_x64 = "https://cfdownload.adobe.com/pub/adobe/coldfusion/java/java11/java11018/jdk-11.0.18_windows-x64_bin.exe"
+$url_java_11_x64 = "https://cfdownload.adobe.com/pub/adobe/coldfusion/java/java11/java11020/jdk-11.0.20_windows-x64_bin.exe"
 $url_java_17_x64 = "https://download.oracle.com/java/17/archive/jdk-17.0.6_windows-x64_bin.exe"
 
 # Office 2013 ODT
