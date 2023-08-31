@@ -52,7 +52,8 @@ url_javajre_10_x64="https://javadl.oracle.com/webapps/download/GetFile/10.0.2+13
 # url_javajdk_8_a64="https://javadl.oracle.com/webapps/download/GetFile/1.8.0_381-b09/8c876547113c4e4aab3c868e9e0ec572/unix-i586/jdk-8u381-macosx-aarch64.dmg"
 url_javajdk_8_x64="https://javadl.oracle.com/webapps/download/GetFile/1.8.0_381-b09/8c876547113c4e4aab3c868e9e0ec572/unix-i586/jdk-8u381-macosx-x64.dmg"
 url_javajdk_10_x64="https://javadl.oracle.com/webapps/download/GetFile/10.0.2+13/19aef61b38124481863b1413dce1855f/unix-i586/jdk-10.0.2_osx-x64_bin.dmg"
-url_javajdk_11_x64="https://cfdownload.adobe.com/pub/adobe/coldfusion/java/java11/java11018/jdk-11.0.18_macos-x64_bin.dmg"
+url_javajdk_11_a64="https://cfdownload.adobe.com/pub/adobe/coldfusion/java/java11/java11020/jdk-11.0.20_macos-aarch64_bin.dmg"
+url_javajdk_11_x64="https://cfdownload.adobe.com/pub/adobe/coldfusion/java/java11/java11020/jdk-11.0.20_macos-x64_bin.dmg"
 url_javajdk_17_a64="https://download.oracle.com/java/17/archive/jdk-17.0.6_macos-aarch64_bin.dmg"
 url_javajdk_17_x64="https://download.oracle.com/java/17/archive/jdk-17.0.6_macos-x64_bin.dmg"
 
