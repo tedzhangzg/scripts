@@ -64,19 +64,35 @@ url_firefox="https://download.mozilla.org/?product=firefox-latest-ssl&os=osx"
 url_thunderbird="https://download.mozilla.org/?product=thunderbird-latest-ssl&os=osx"
 
 # Microsoft Office
+# 
+# latest version
+# ser 2021
 url_microsoft_office="https://go.microsoft.com/fwlink/p/?linkid=525133"
+# 
 # last version for macOS 11
+# ser 2021
 url_microsoft_office_16_v1677="https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_365_and_Office_16.77.23091003_Installer.pkg"
+# 
 # last version for macOS 10.15
+# ser 2021
 url_microsoft_office_16_v1666="https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.66.22100900_Installer.pkg"
+# 
 # last version for macOS 10.14
+# ser 2019
 url_microsoft_office_16_v1654="https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.54.21101001_Installer.pkg"
+# 
 # last version for macOS 10.13
+# ser 2019o
 url_microsoft_office_2019_v1643="https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.43.20110804_Installer.pkg"
+# 
 # last version for macOS 10.12
+# ser 2019o
 url_microsoft_office_2019_v1629="https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.29.19090802_Installer.pkg"
+# 
 # last version for macOS 10.11
+# ser 2016
 url_microsoft_office_2016_v1616="https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/OfficeMac/Microsoft_Office_16.16.18081201_Installer.pkg"
+# 
 # last version for macOS 10.10
 # last version for macOS 10.9
 # last version for macOS 10.8
