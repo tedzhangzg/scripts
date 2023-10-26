@@ -65,6 +65,8 @@ url_thunderbird="https://download.mozilla.org/?product=thunderbird-latest-ssl&os
 
 # Microsoft Office
 url_microsoft_office="https://go.microsoft.com/fwlink/p/?linkid=525133"
+# last version for macOS 11
+url_microsoft_office_16_v1677="https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_365_and_Office_16.77.23091003_Installer.pkg"
 # last version for macOS 10.15
 url_microsoft_office_16_v1666="https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.66.22100900_Installer.pkg"
 # last version for macOS 10.14
