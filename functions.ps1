@@ -153,14 +153,14 @@ Function Is-Win11() {
 # Windows Server 2003 SP2: 5.2.3790
 # Windows Server 2000: 5.0.2195
 # 
-# Windows Server version 23H2: 10.0.?
-# Windows Server version 20H2: 10.0.?
-# Windows Server version 2004: 10.0.?
-# Windows Server version 1909: 10.0.?
-# Windows Server version 1903: 10.0.?
-# Windows Server version 1809: 10.0.?
-# Windows Server version 1803: 10.0.?
-# Windows Server version 1709: 10.0.?
+# Windows Server version 23H2: 10.0.25398
+# Windows Server version 20H2: 10.0.19041
+# Windows Server version 2004: 10.0.19041
+# Windows Server version 1909: 10.0.18362
+# Windows Server version 1903: 10.0.18362
+# Windows Server version 1809: 10.0.17763
+# Windows Server version 1803: 10.0.17134
+# Windows Server version 1709: 10.0.16299
 # 
 # Windows 11 23H2: 10.0.22631
 # Windows 11 22H2: 10.0.22621
