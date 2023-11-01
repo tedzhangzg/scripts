@@ -138,6 +138,7 @@ Function Is-Win11() {
 # [System.Environment]::OSVersion.Version.Build
 # 
 # Versions
+# 
 # Windows Server 2022: 10, 0, 20348
 # Windows Server 2019: 10, 0, 17763
 # Windows Server 2016: 10, 0, 14393
@@ -151,8 +152,20 @@ Function Is-Win11() {
 # Windows Server 2003 R2: 5, 2, 3790
 # Windows Server 2003 SP2: 5, 2, 3790
 # Windows Server 2000: 5, 0, 2195
+# 
+# Windows Server version 23H2: 10, 0, ?
+# Windows Server version 20H2: 10, 0, ?
+# Windows Server version 2004: 10, 0, ?
+# Windows Server version 1909: 10, 0, ?
+# Windows Server version 1903: 10, 0, ?
+# Windows Server version 1809: 10, 0, ?
+# Windows Server version 1803: 10, 0, ?
+# Windows Server version 1709: 10, 0, ?
+# 
+# Windows 11 23H2: 10, 0, 22631
 # Windows 11 22H2: 10, 0, 22621
 # Windows 11 21H2: 10, 0, 22000
+# 
 # Windows 10 22H2: 10, 0, 19045
 # Windows 10 21H2: 10, 0, 19044
 # Windows 10 21H1: 10, 0, 19043
@@ -167,14 +180,18 @@ Function Is-Win11() {
 # Windows 10 1607: 10, 0, 14393
 # Windows 10 1511: 10, 0, 10586
 # Windows 10 1507: 10, 0, 10240
+# 
 # Windows 8.1 Update: 6, 3, 9600
 # Windows 8.1: 6, 3, 9200
 # Windows 8: 6, 2, 9200
+# 
 # Windows 7 SP1: 6, 1, 7601
 # Windows 7: 6, 1, 7600
+# 
 # Windows Vista SP2: 6, 0, 6002
 # Windows Vista SP1: 6, 0, 6001
 # Windows Vista: 6, 0, 6000
+# 
 # Windows XP SP3: 5, 1, 2600
 # Windows 2000 SP4: 5, 0, 2195
 # 
