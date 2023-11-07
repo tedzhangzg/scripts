@@ -71,7 +71,8 @@ $url_cppdb_11_x86 = "https://download.microsoft.com/download/3/B/C/3BC60F47-6A7C
 $url_cppdb_12_x86 = "https://download.microsoft.com/download/2/1/F/21F05B77-C444-46C0-B357-7EBC78C95CE2/vc_uwpdesktop.120.exe"
 
 # Linux kernel update package x64
-$url_wsl2kernel = "https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi"
+$url_wsl2kernel_a64 = "https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_arm64.msi"
+$url_wsl2kernel_x64 = "https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi"
 
 # Visual Studio Code
 $url_vscode_a64 = "https://code.visualstudio.com/sha/download?build=stable&os=win32-arm64"
