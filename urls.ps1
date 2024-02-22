@@ -14,6 +14,9 @@ $url_cppdb_14_a64 = "https://aka.ms/Microsoft.VCLibs.arm64.14.00.Desktop.appx"
 $url_cppdb_14_x64 = "https://aka.ms/Microsoft.VCLibs.x64.14.00.Desktop.appx"
 $url_cppdb_14_x86 = "https://aka.ms/Microsoft.VCLibs.x86.14.00.Desktop.appx"
 
+# NuGet 2.7
+$url_nuget_msuixaml = "https://www.nuget.org/api/v2/package/Microsoft.UI.Xaml/2.7.3"
+
 # Windows Package Manager
 $url_winget = "https://github.com/microsoft/winget-cli/releases/download/v1.6.3482/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle"
 # $url_winget = "https://github.com/microsoft/winget-cli/releases/download/v1.6.3421/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle"
