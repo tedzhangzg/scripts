@@ -22,7 +22,9 @@ $url_nuget_msuixaml = "https://www.nuget.org/api/v2/package/Microsoft.UI.Xaml/2.
 # $url_nuget_msuixaml = "https://www.nuget.org/api/v2/package/Microsoft.UI.Xaml/2.7.3"
 
 # Windows Package Manager
-$url_winget = "https://github.com/microsoft/winget-cli/releases/download/v1.7.10582/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle"
+$url_winget = "https://github.com/microsoft/winget-cli/releases/download/v1.7.10861/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle"
+# $url_winget = "https://github.com/microsoft/winget-cli/releases/download/v1.7.10661/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle"
+# $url_winget = "https://github.com/microsoft/winget-cli/releases/download/v1.7.10582/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle"
 # $url_winget = "https://github.com/microsoft/winget-cli/releases/download/v1.6.3482/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle"
 # $url_winget = "https://github.com/microsoft/winget-cli/releases/download/v1.6.3421/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle"
 # $url_winget = "https://github.com/microsoft/winget-cli/releases/download/v1.6.3133/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle"
