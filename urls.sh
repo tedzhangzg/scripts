@@ -12,6 +12,9 @@
 
 
 
+# Amorphous Disk Mark
+url_amorphousdiskmark="https://katsurashareware.com/dl/AmorphousDiskMark.zip"
+
 # Python3
 url_python3="https://www.python.org/ftp/python/3.10.9/python-3.10.9-macos11.pkg"
 
