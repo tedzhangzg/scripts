@@ -106,7 +106,7 @@ $url_msaccessdbengine_2016_x86 = "https://download.microsoft.com/download/3/5/C/
 
 # KMS
 $url_convr2v = "https://raw.githubusercontent.com/abbodi1406/C2R-R2V-AIO/master/C2R-R2V-AIO.cmd"
-$url_micactscr = "https://raw.githubusercontent.com/massgravel/Microsoft-Activation-Scripts/master/MAS/All-In-One-Version/MAS_AIO-CRC32_31F7FD1E.cmd"
+$url_micactscr = "https://raw.githubusercontent.com/massgravel/Microsoft-Activation-Scripts/master/MAS/All-In-One-Version/MAS_AIO-CRC32_8C3AA7E0.cmd"
 # $url_micactscr = "https://raw.githubusercontent.com/massgravel/Microsoft-Activation-Scripts/master/MAS/All-In-One-Version/MAS_AIO.cmd"
 
 
