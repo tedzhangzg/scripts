@@ -74,7 +74,7 @@ url_microsoft_office="https://go.microsoft.com/fwlink/p/?linkid=525133"
 # 
 # last version for macOS 12
 # ver 2021
-url_microsoft_office_16_v16xx="https://go.microsoft.com/fwlink/p/?linkid=525133"
+url_microsoft_office_16_v1689="https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_365_and_Office_16.89.24090815_Installer.pkg"
 # 
 # last version for macOS 11
 # ver 2021
