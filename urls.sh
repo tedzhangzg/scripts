@@ -72,9 +72,16 @@ url_thunderbird="https://download.mozilla.org/?product=thunderbird-latest-ssl&os
 # ver 2021
 url_microsoft_office="https://go.microsoft.com/fwlink/p/?linkid=525133"
 # 
+# last version for macOS 13
+# ver 2024
+url_microsoft_office_16_v16xx="https://go.microsoft.com/fwlink/p/?linkid=525133"
+# 
 # last version for macOS 12
 # ver 2021
 url_microsoft_office_16_v1689="https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_365_and_Office_16.89.24090815_Installer.pkg"
+# 
+# note
+# last version for Office 2019 license is v16.78
 # 
 # last version for macOS 11
 # ver 2019 2021
@@ -95,6 +102,9 @@ url_microsoft_office_2019_v1643="https://officecdn.microsoft.com/pr/C1297A47-86C
 # last version for macOS 10.12
 # ver 2019o
 url_microsoft_office_2019_v1629="https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.29.19090802_Installer.pkg"
+# 
+# note
+# last version for Office 2016 license is v16.16
 # 
 # last version for macOS 10.11
 # ver 2016
