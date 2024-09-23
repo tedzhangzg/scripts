@@ -110,7 +110,7 @@ url_microsoft_office_2019_v1629="https://officecdn.microsoft.com/pr/C1297A47-86C
 # last version for macOS 10.11
 # ver 2016
 url_microsoft_office_2016_v1616="https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.16.20101200_Installer.pkg"
-# url_microsoft_office_2016_v1616="https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/OfficeMac/Microsoft_Office_16.16.18081201_Installer.pkg"
+# url_microsoft_office_2016_v1616="https://go.microsoft.com/fwlink/?linkid=871743"
 # 
 # last version for macOS 10.10
 # last version for macOS 10.9
