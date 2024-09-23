@@ -105,6 +105,10 @@ url_microsoft_office_2019_v1643="https://officecdn.microsoft.com/pr/C1297A47-86C
 url_microsoft_office_2019_v1629="https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.29.19090802_Installer.pkg"
 # 
 # note
+# Office 2019+ download link
+# url_microsoft_office_16_latest="https://go.microsoft.com/fwlink/?linkid=525133"
+# 
+# note
 # last version for Office 2016 license is v16.16
 # 
 # last version for macOS 10.11
