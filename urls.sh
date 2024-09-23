@@ -84,23 +84,23 @@ url_microsoft_office_16_v1689="https://officecdn.microsoft.com/pr/C1297A47-86C4-
 # last version for Office 2019 license is v16.78
 # 
 # last version for macOS 11
-# ver 2019 2021
+# ver 2019v2 2021
 url_microsoft_office_16_v1677="https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_365_and_Office_16.77.23091003_Installer.pkg"
 # 
 # last version for macOS 10.15
-# ver 2019 2021
+# ver 2019v2 2021
 url_microsoft_office_16_v1666="https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.66.22100900_Installer.pkg"
 # 
 # last version for macOS 10.14
-# ver 2019 2021
+# ver 2019v1 2021
 url_microsoft_office_16_v1654="https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.54.21101001_Installer.pkg"
 # 
 # last version for macOS 10.13
-# ver 2019o
+# ver 2019v1
 url_microsoft_office_2019_v1643="https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.43.20110804_Installer.pkg"
 # 
 # last version for macOS 10.12
-# ver 2019o
+# ver 2019v1
 url_microsoft_office_2019_v1629="https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.29.19090802_Installer.pkg"
 # 
 # note
