@@ -69,8 +69,10 @@ url_thunderbird="https://download.mozilla.org/?product=thunderbird-latest-ssl&os
 # Microsoft Office
 # 
 # latest version
-# ver 2021
+# ver 16
 url_microsoft_office="https://go.microsoft.com/fwlink/p/?linkid=525133"
+# for Office with Teams
+# url_microsoft_office="https://go.microsoft.com/fwlink/p/?linkid=2009112"
 # 
 # last version for macOS 13
 # ver 2024
