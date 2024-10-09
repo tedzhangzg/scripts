@@ -139,6 +139,7 @@ Function Is-Win11() {
 # 
 # Versions
 # 
+# Windows Server 2025: 10.0.206100?
 # Windows Server 2022: 10.0.20348
 # Windows Server 2019: 10.0.17763
 # Windows Server 2016: 10.0.14393
@@ -162,24 +163,25 @@ Function Is-Win11() {
 # Windows Server version 1803: 10.0.17134
 # Windows Server version 1709: 10.0.16299
 # 
+# Windows 11 24H2: 10.0.26100 - also Windows 11 Enterprise LTSC 2024
 # Windows 11 23H2: 10.0.22631
 # Windows 11 22H2: 10.0.22621
 # Windows 11 21H2: 10.0.22000
 # 
 # Windows 10 22H2: 10.0.19045
-# Windows 10 21H2: 10.0.19044
+# Windows 10 21H2: 10.0.19044 - also Windows 10 Enterprise LTSC 2021
 # Windows 10 21H1: 10.0.19043
 # Windows 10 20H2: 10.0.19042
 # Windows 10 2004: 10.0.19041
 # Windows 10 1909: 10.0.18363
 # Windows 10 1903: 10.0.18362
-# Windows 10 1809: 10.0.17763
+# Windows 10 1809: 10.0.17763 - also Windows 10 Enterprise LTSC 2019
 # Windows 10 1803: 10.0.17134
 # Windows 10 1709: 10.0.16299
 # Windows 10 1703: 10.0.15063
-# Windows 10 1607: 10.0.14393
+# Windows 10 1607: 10.0.14393 - also Windows 10 Enterprise LTSC 2016
 # Windows 10 1511: 10.0.10586
-# Windows 10 1507: 10.0.10240
+# Windows 10 1507: 10.0.10240 - also Windows 10 Enterprise LTSC 2015
 # 
 # Windows 8.1 Update: 6.3.9600
 # Windows 8.1: 6.3.9200
