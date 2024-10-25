@@ -139,7 +139,8 @@ Function Is-Win11() {
 # 
 # Versions
 # 
-# Windows Server 2025: 10.0.206100?
+# Server LTSC
+# Windows Server 2025: 10.0.26100
 # Windows Server 2022: 10.0.20348
 # Windows Server 2019: 10.0.17763
 # Windows Server 2016: 10.0.14393
@@ -153,11 +154,17 @@ Function Is-Win11() {
 # Windows Server 2003 R2: 5.2.3790
 # Windows Server 2003 SP2: 5.2.3790
 # Windows Server 2000: 5.0.2195
+# Windows 2000 Server SP4: 5.0.2195
+# Windows NT 4.0: 4.0.1381
+# Windows NT 3.51: 3.51.1057
+# Windows NT 3.5: ?
+# Windows NT 3.1: ?
 # 
+# Server AC
 # Windows Server version 23H2: 10.0.25398
-# Windows Server version 20H2: 10.0.19041
+# Windows Server version 20H2: 10.0.19042
 # Windows Server version 2004: 10.0.19041
-# Windows Server version 1909: 10.0.18362
+# Windows Server version 1909: 10.0.18363
 # Windows Server version 1903: 10.0.18362
 # Windows Server version 1809: 10.0.17763
 # Windows Server version 1803: 10.0.17134
