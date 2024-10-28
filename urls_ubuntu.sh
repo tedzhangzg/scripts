@@ -14,8 +14,8 @@
 
 # Java JRE
 # url_javajre_8_a64="https://javadl.oracle.com/webapps/download/GetFile/1.8.0_381-b09/8c876547113c4e4aab3c868e9e0ec572/linux-i586/jre-8u381-linux-aarch64.tar.gz"
-url_javajre_8_x64="https://javadl.oracle.com/webapps/download/GetFile/1.8.0_381-b09/8c876547113c4e4aab3c868e9e0ec572/linux-i586/jre-8u381-linux-x64.tar.gz"
-url_javajre_8_x86="https://javadl.oracle.com/webapps/download/GetFile/1.8.0_381-b09/8c876547113c4e4aab3c868e9e0ec572/linux-i586/jre-8u381-linux-i586.tar.gz"
+url_javajre_8_x64="https://javadl.oracle.com/webapps/download/GetFile/1.8.0_431-b10/0d8f12bc927a4e2c9f8568ca567db4ee/linux-i586/jre-8u431-linux-x64.tar.gz"
+url_javajre_8_x86="https://javadl.oracle.com/webapps/download/GetFile/1.8.0_431-b10/0d8f12bc927a4e2c9f8568ca567db4ee/linux-i586/jre-8u431-linux-i586.tar.gz"
 url_javajre_10_x64="https://javadl.oracle.com/webapps/download/GetFile/10.0.2+13/19aef61b38124481863b1413dce1855f/linux-i586/jre-10.0.2_linux-x64_bin.tar.gz"
 
 # Java JDK
