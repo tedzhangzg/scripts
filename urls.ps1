@@ -17,7 +17,7 @@ $url_cppdb_14_x86 = "https://aka.ms/Microsoft.VCLibs.x86.14.00.Desktop.appx"
 # NuGet
 # Microsoft.UI.Xaml
 # 2.8
-$url_nuget_msuixaml = "https://www.nuget.org/api/v2/package/Microsoft.UI.Xaml/2.8.6"
+$url_nuget_msuixaml = "https://www.nuget.org/api/v2/package/Microsoft.UI.Xaml/2.8.7"
 # 2.7
 # $url_nuget_msuixaml = "https://www.nuget.org/api/v2/package/Microsoft.UI.Xaml/2.7.3"
 
