@@ -35,14 +35,26 @@ $url_dotnetfw_481 = "https://go.microsoft.com/fwlink/?linkid=2203305"
 $url_dotnetfw_11rtm = "https://raw.githubusercontent.com/not001praween001/stockMN-exe/master/stockMN_1.3.1/dotnetfx.exe"
 $url_dotnetfw_11sp1 = "https://download.microsoft.com/download/8/b/4/8b4addd8-e957-4dea-bdb8-c4e00af5b94b/NDP1.1sp1-KB867460-X86.exe"
 
-# .NET Core
+# .NET
+# 
+# v6
+$url_dotnet6HB = "https://download.visualstudio.microsoft.com/download/pr/05726c49-3a3d-4862-9ff8-0660d9dc3c52/71c295f9287faad89e2d3233a38b44fb/dotnet-hosting-5.0.17-win.exe"
+$url_dotnet6DRT_a64 = "https://download.visualstudio.microsoft.com/download/pr/be25784a-4231-4c53-ba6e-869166ef523f/9602c6c0d358d31dc710fd0573fc39e0/windowsdesktop-runtime-5.0.17-win-arm64.exe"
+$url_dotnet6DRT_x64 = "https://download.visualstudio.microsoft.com/download/pr/3aa4e942-42cd-4bf5-afe7-fc23bd9c69c5/64da54c8864e473c19a7d3de15790418/windowsdesktop-runtime-5.0.17-win-x64.exe"
+$url_dotnet6DRT_x86 = "https://download.visualstudio.microsoft.com/download/pr/b6fe5f2a-95f4-46f1-9824-f5994f10bc69/db5ec9b47ec877b5276f83a185fdb6a0/windowsdesktop-runtime-5.0.17-win-x86.exe"
+# 
+# v5
 $url_dotnet5HB = "https://download.visualstudio.microsoft.com/download/pr/05726c49-3a3d-4862-9ff8-0660d9dc3c52/71c295f9287faad89e2d3233a38b44fb/dotnet-hosting-5.0.17-win.exe"
 $url_dotnet5DRT_a64 = "https://download.visualstudio.microsoft.com/download/pr/be25784a-4231-4c53-ba6e-869166ef523f/9602c6c0d358d31dc710fd0573fc39e0/windowsdesktop-runtime-5.0.17-win-arm64.exe"
 $url_dotnet5DRT_x64 = "https://download.visualstudio.microsoft.com/download/pr/3aa4e942-42cd-4bf5-afe7-fc23bd9c69c5/64da54c8864e473c19a7d3de15790418/windowsdesktop-runtime-5.0.17-win-x64.exe"
 $url_dotnet5DRT_x86 = "https://download.visualstudio.microsoft.com/download/pr/b6fe5f2a-95f4-46f1-9824-f5994f10bc69/db5ec9b47ec877b5276f83a185fdb6a0/windowsdesktop-runtime-5.0.17-win-x86.exe"
+# 
+# v3
 $url_dotnet31HB = "https://download.visualstudio.microsoft.com/download/pr/6744eb9d-dcd4-4386-9d87-b03b70fc58ce/818fadf3f3d919c17ba845b2195bfd9b/dotnet-hosting-3.1.32-win.exe"
 $url_dotnet31DRT_x64 = "https://download.visualstudio.microsoft.com/download/pr/b92958c6-ae36-4efa-aafe-569fced953a5/1654639ef3b20eb576174c1cc200f33a/windowsdesktop-runtime-3.1.32-win-x64.exe"
 $url_dotnet31DRT_x86 = "https://download.visualstudio.microsoft.com/download/pr/3f353d2c-0431-48c5-bdf6-fbbe8f901bb5/542a4af07c1df5136a98a1c2df6f3d62/windowsdesktop-runtime-3.1.32-win-x86.exe"
+# 
+# v2
 $url_dotnet21HB = "https://download.visualstudio.microsoft.com/download/pr/cf7b17e3-ed6d-4ded-8ae6-9f83ffaaca98/9d2ca844baa4a4a9ed83861ffc8e293e/dotnet-hosting-2.1.30-win.exe"
 
 # Visual C++ Redistributable
