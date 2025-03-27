@@ -340,7 +340,7 @@ Function Instal-Ap($dir_installer, $install_args) {
     # Notes
     # Full commands that Invoke Expression actually do
     # Get-ChildItem -Path $dir_installer -Recurse -Filter *.$installer_fileext | ForEach-Object { Start-Process -FilePath $_.FullName -ArgumentList $install_args -Wait }
-    # Get-ChildItem -Path $dir_installer -Recurse -Filter *.$installer_fileext | ForEach-Object { Add-AppxPackage -Path $_.FullName }
+    # Get-ChildItem -Path $dir_installer -Recurse -Filter *.$installer_fileext | ForEach-Object { Add-AppxProvisionedPackage -Online -PackagePath $_.FullName -SkipLicense }
 
     Write-Host "... Done Installing $dir_installer"
 }
