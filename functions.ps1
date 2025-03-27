@@ -331,7 +331,8 @@ Function Instal-Ap($dir_installer, $install_args) {
     if ( ($installer_fileext -eq "msi") -or ($installer_fileext -eq "msp") -or ($installer_fileext -eq "exe") ) {
         Invoke-Expression "Get-ChildItem -Path `$dir_installer -Recurse -Filter *.`$installer_fileext | ForEach-Object { Start-Process -FilePath `$_.FullName -ArgumentList `$install_args -Wait }"
     } elseif ( ($installer_fileext -like "app*") -or ($installer_fileext -like "msix*") ) {
-        Invoke-Expression "Get-ChildItem -Path `$dir_installer -Recurse -Filter *.`$installer_fileext | ForEach-Object { Add-AppxProvisionedPackage -Online -PackagePath `$_.FullName -SkipLicense }"
+        Invoke-Expression "Get-ChildItem -Path `$dir_installer -Recurse -Filter *.`$installer_fileext | ForEach-Object { Add-AppxPackage -Path `$_.FullName }"
+        # Invoke-Expression "Get-ChildItem -Path `$dir_installer -Recurse -Filter *.`$installer_fileext | ForEach-Object { Add-AppxProvisionedPackage -Online -PackagePath `$_.FullName -SkipLicense }"
     }
     
     # Clear var for next use
@@ -340,6 +341,7 @@ Function Instal-Ap($dir_installer, $install_args) {
     # Notes
     # Full commands that Invoke Expression actually do
     # Get-ChildItem -Path $dir_installer -Recurse -Filter *.$installer_fileext | ForEach-Object { Start-Process -FilePath $_.FullName -ArgumentList $install_args -Wait }
+    # Get-ChildItem -Path $dir_installer -Recurse -Filter *.$installer_fileext | ForEach-Object { Add-AppxPackage -Path $_.FullName }
     # Get-ChildItem -Path $dir_installer -Recurse -Filter *.$installer_fileext | ForEach-Object { Add-AppxProvisionedPackage -Online -PackagePath $_.FullName -SkipLicense }
 
     Write-Host "... Done Installing $dir_installer"
