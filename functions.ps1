@@ -217,6 +217,11 @@ Function Is-Win11() {
 
 
 
+# location of start menu items
+$dir_startmenu = "$env:ProgramData\Microsoft\Windows\Start Menu\Programs"
+
+
+
 # Get URL from winget
 # 
 # Usage
