@@ -218,10 +218,14 @@ Function Is-Win11() {
 
 
 # location of start menu items
-$dir_startmenuprograms = "$env:ProgramData\Microsoft\Windows\Start Menu\Programs"
 # 
-# note, long form is
+# local machine
+$dir_startmenuprograms_allusers = "$env:ProgramData\Microsoft\Windows\Start Menu\Programs"
 # C:\ProgramData\Microsoft\Windows\Start Menu\Programs
+# 
+# current user
+$dir_startmenuprograms_currentuser = "$env:APPDATA\Microsoft\Windows\Start Menu\Programs"
+# C:\Users\$username\AppData\Roaming\Microsoft\Windows\Start Menu\Programs
 
 
 
