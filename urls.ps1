@@ -10,9 +10,17 @@
 $url_addmsstore = "https://github.com/kkkgo/LTSC-Add-MicrosoftStore/archive/refs/heads/master.zip"
 
 # C++ Runtime framework packages for Desktop Bridge
+# 
+# v14
 $url_cppdb_14_a64 = "https://aka.ms/Microsoft.VCLibs.arm64.14.00.Desktop.appx"
 $url_cppdb_14_x64 = "https://aka.ms/Microsoft.VCLibs.x64.14.00.Desktop.appx"
 $url_cppdb_14_x86 = "https://aka.ms/Microsoft.VCLibs.x86.14.00.Desktop.appx"
+# 
+# v12
+$url_cppdb_12_x86 = "https://download.microsoft.com/download/2/1/F/21F05B77-C444-46C0-B357-7EBC78C95CE2/vc_uwpdesktop.120.exe"
+# 
+# v11
+$url_cppdb_11_x86 = "https://download.microsoft.com/download/3/B/C/3BC60F47-6A7C-4D46-8CFB-C2E746EF336E/vc_uwpdesktop.110.exe"
 
 # NuGet
 # Microsoft.UI.Xaml
@@ -24,16 +32,8 @@ $url_nuget_msuixaml = "https://www.nuget.org/api/v2/package/Microsoft.UI.Xaml/2.
 # $url_nuget_msuixaml = "https://www.nuget.org/api/v2/package/Microsoft.UI.Xaml/2.5.0"
 # $url_nuget_msuixaml = "https://www.nuget.org/api/v2/package/Microsoft.UI.Xaml/2.4.3"
 
-
 # Windows Package Manager
 $url_winget = "https://github.com/microsoft/winget-cli/releases/latest/download/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle"
-
-# Microsoft .NET Framework 4.8.1
-$url_dotnetfw_481 = "https://go.microsoft.com/fwlink/?linkid=2203305"
-
-# Microsoft .NET Framework 1.1
-$url_dotnetfw_11rtm = "https://raw.githubusercontent.com/not001praween001/stockMN-exe/master/stockMN_1.3.1/dotnetfx.exe"
-$url_dotnetfw_11sp1 = "https://download.microsoft.com/download/8/b/4/8b4addd8-e957-4dea-bdb8-c4e00af5b94b/NDP1.1sp1-KB867460-X86.exe"
 
 # .NET
 # 
@@ -51,26 +51,41 @@ $url_dotnet31DRT_x86 = "https://download.visualstudio.microsoft.com/download/pr/
 # v2.1
 $url_dotnet21HB = "https://builds.dotnet.microsoft.com/dotnet/aspnetcore/Runtime/2.1.30/dotnet-hosting-2.1.30-win.exe"
 
+# Microsoft .NET Framework
+# 
+# v4.8.1
+$url_dotnetfw_481 = "https://go.microsoft.com/fwlink/?linkid=2203305"
+# 
+# v1.1 and SP1
+$url_dotnetfw_11rtm = "https://raw.githubusercontent.com/not001praween001/stockMN-exe/master/stockMN_1.3.1/dotnetfx.exe"
+$url_dotnetfw_11sp1 = "https://download.microsoft.com/download/8/b/4/8b4addd8-e957-4dea-bdb8-c4e00af5b94b/NDP1.1sp1-KB867460-X86.exe"
+
 # Visual C++ Redistributable
-$url_vcpp_2005_x64 = "https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x64.EXE"
-$url_vcpp_2005_x86 = "https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x86.EXE"
-$url_vcpp_2008_x64 = "https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x64.exe"
-$url_vcpp_2008_x86 = "https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x86.exe"
-$url_vcpp_2010_x64 = "https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x64.exe"
-$url_vcpp_2010_x86 = "https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x86.exe"
-$url_vcpp_2012_x64 = "https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x64.exe"
-$url_vcpp_2012_x86 = "https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x86.exe"
-$url_vcpp_2013_x64 = "https://aka.ms/highdpimfc2013x64enu"
-$url_vcpp_2013_x86 = "https://aka.ms/highdpimfc2013x86enu"
+# 
+# v2015+
 $url_vcpp_2015Plus_a64 = "https://aka.ms/vs/17/release/vc_redist.arm64.exe"
 $url_vcpp_2015Plus_x64 = "https://aka.ms/vs/17/release/vc_redist.x64.exe"
 $url_vcpp_2015Plus_x86 = "https://aka.ms/vs/17/release/vc_redist.x86.exe"
-
-# C++ Runtime v11.0 framework package for Desktop Bridge
-$url_cppdb_11_x86 = "https://download.microsoft.com/download/3/B/C/3BC60F47-6A7C-4D46-8CFB-C2E746EF336E/vc_uwpdesktop.110.exe"
-
-# C++ Runtime v12 framework package for Desktop Bridge
-$url_cppdb_12_x86 = "https://download.microsoft.com/download/2/1/F/21F05B77-C444-46C0-B357-7EBC78C95CE2/vc_uwpdesktop.120.exe"
+# 
+# v2013
+$url_vcpp_2013_x64 = "https://aka.ms/highdpimfc2013x64enu"
+$url_vcpp_2013_x86 = "https://aka.ms/highdpimfc2013x86enu"
+# 
+# v2012
+$url_vcpp_2012_x64 = "https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x64.exe"
+$url_vcpp_2012_x86 = "https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x86.exe"
+# 
+# v2010
+$url_vcpp_2010_x64 = "https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x64.exe"
+$url_vcpp_2010_x86 = "https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x86.exe"
+# 
+# v2008
+$url_vcpp_2008_x64 = "https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x64.exe"
+$url_vcpp_2008_x86 = "https://download.microsoft.com/download/5/D/8/5D8C65CB-C849-4025-8E95-C3966CAFD8AE/vcredist_x86.exe"
+# 
+# v2005
+$url_vcpp_2005_x64 = "https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x64.EXE"
+$url_vcpp_2005_x86 = "https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x86.EXE"
 
 # Linux kernel update package x64
 $url_wsl2kernel_a64 = "https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_arm64.msi"
