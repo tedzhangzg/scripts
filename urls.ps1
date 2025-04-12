@@ -24,8 +24,10 @@ $url_cppdb_11_x86 = "https://download.microsoft.com/download/3/B/C/3BC60F47-6A7C
 
 # NuGet
 # Microsoft.UI.Xaml
+# 
 # latest
 $url_nuget_msuixaml = "https://www.nuget.org/api/v2/package/Microsoft.UI.Xaml/2.8.7"
+# 
 # older
 # $url_nuget_msuixaml = "https://www.nuget.org/api/v2/package/Microsoft.UI.Xaml/2.7.3"
 # $url_nuget_msuixaml = "https://www.nuget.org/api/v2/package/Microsoft.UI.Xaml/2.6.3"
@@ -35,7 +37,7 @@ $url_nuget_msuixaml = "https://www.nuget.org/api/v2/package/Microsoft.UI.Xaml/2.
 # Windows Package Manager
 $url_winget = "https://github.com/microsoft/winget-cli/releases/latest/download/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle"
 
-# .NET
+# dot NET
 # 
 # v6
 $url_dotnet6HB = "https://builds.dotnet.microsoft.com/dotnet/aspnetcore/Runtime/6.0.36/dotnet-hosting-6.0.36-win.exe"
@@ -51,7 +53,7 @@ $url_dotnet31DRT_x86 = "https://download.visualstudio.microsoft.com/download/pr/
 # v2.1
 $url_dotnet21HB = "https://builds.dotnet.microsoft.com/dotnet/aspnetcore/Runtime/2.1.30/dotnet-hosting-2.1.30-win.exe"
 
-# Microsoft .NET Framework
+# dot NET Framework
 # 
 # v4.8.1
 $url_dotnetfw_481 = "https://go.microsoft.com/fwlink/?linkid=2203305"
