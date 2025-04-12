@@ -43,18 +43,12 @@ $url_dotnet6DRT_a64 = "https://builds.dotnet.microsoft.com/dotnet/WindowsDesktop
 $url_dotnet6DRT_x64 = "https://builds.dotnet.microsoft.com/dotnet/WindowsDesktop/6.0.36/windowsdesktop-runtime-6.0.36-win-x64.exe"
 $url_dotnet6DRT_x86 = "https://builds.dotnet.microsoft.com/dotnet/WindowsDesktop/6.0.36/windowsdesktop-runtime-6.0.36-win-x86.exe"
 # 
-# v5
-$url_dotnet5HB = "https://builds.dotnet.microsoft.com/dotnet/aspnetcore/Runtime/5.0.17/dotnet-hosting-5.0.17-win.exe"
-$url_dotnet5DRT_a64 = "https://builds.dotnet.microsoft.com/dotnet/WindowsDesktop/5.0.17/windowsdesktop-runtime-5.0.17-win-arm64.exe"
-$url_dotnet5DRT_x64 = "https://builds.dotnet.microsoft.com/dotnet/WindowsDesktop/5.0.17/windowsdesktop-runtime-5.0.17-win-x64.exe"
-$url_dotnet5DRT_x86 = "https://builds.dotnet.microsoft.com/dotnet/WindowsDesktop/5.0.17/windowsdesktop-runtime-5.0.17-win-x86.exe"
-# 
-# v3
+# v3.1
 $url_dotnet31HB = "https://builds.dotnet.microsoft.com/dotnet/aspnetcore/Runtime/3.1.32/dotnet-hosting-3.1.32-win.exe"
 $url_dotnet31DRT_x64 = "https://download.visualstudio.microsoft.com/download/pr/b92958c6-ae36-4efa-aafe-569fced953a5/1654639ef3b20eb576174c1cc200f33a/windowsdesktop-runtime-3.1.32-win-x64.exe"
 $url_dotnet31DRT_x86 = "https://download.visualstudio.microsoft.com/download/pr/3f353d2c-0431-48c5-bdf6-fbbe8f901bb5/542a4af07c1df5136a98a1c2df6f3d62/windowsdesktop-runtime-3.1.32-win-x86.exe"
 # 
-# v2
+# v2.1
 $url_dotnet21HB = "https://builds.dotnet.microsoft.com/dotnet/aspnetcore/Runtime/2.1.30/dotnet-hosting-2.1.30-win.exe"
 
 # Visual C++ Redistributable
