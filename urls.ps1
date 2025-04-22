@@ -105,11 +105,11 @@ $url_winessentials_2012 = "https://archive.org/download/wlsetup-all_201802/wlset
 $url_teamviewerqs_13 = "https://download.teamviewer.com/download/version_13x/TeamViewerQS.exe"
 
 # Java JRE JDK
-$url_javajre_8_x64 = "https://javadl.oracle.com/webapps/download/GetFile/1.8.0_431-b10/0d8f12bc927a4e2c9f8568ca567db4ee/windows-i586/jre-8u431-windows-x64.exe"
-$url_javajre_8_x86 = "https://javadl.oracle.com/webapps/download/GetFile/1.8.0_431-b10/0d8f12bc927a4e2c9f8568ca567db4ee/windows-i586/jre-8u431-windows-i586.exe"
+$url_javajre_8_x64 = "https://javadl.oracle.com/webapps/download/GetFile/1.8.0_451-b10/8a1589aa0fe24566b4337beee47c2d29/windows-i586/jre-8u451-windows-x64.exe"
+$url_javajre_8_x86 = "https://javadl.oracle.com/webapps/download/GetFile/1.8.0_451-b10/8a1589aa0fe24566b4337beee47c2d29/windows-i586/jre-8u451-windows-i586.exe"
 $url_javajre_10_x64 = "https://javadl.oracle.com/webapps/download/GetFile/10.0.2+13/19aef61b38124481863b1413dce1855f/windows-i586/jre-10.0.2_windows-x64_bin.exe"
-$url_javajdk_8_x64 = "https://javadl.oracle.com/webapps/download/GetFile/1.8.0_381-b09/8c876547113c4e4aab3c868e9e0ec572/windows-i586/jdk-8u381-windows-x64.exe"
-$url_javajdk_8_x86 = "https://javadl.oracle.com/webapps/download/GetFile/1.8.0_381-b09/8c876547113c4e4aab3c868e9e0ec572/windows-i586/jdk-8u381-windows-i586.exe"
+# $url_javajdk_8_x64 = "https://javadl.oracle.com/webapps/download/GetFile/1.8.0_381-b09/8c876547113c4e4aab3c868e9e0ec572/windows-i586/jdk-8u381-windows-x64.exe"
+# $url_javajdk_8_x86 = "https://javadl.oracle.com/webapps/download/GetFile/1.8.0_381-b09/8c876547113c4e4aab3c868e9e0ec572/windows-i586/jdk-8u381-windows-i586.exe"
 $url_javajdk_10_x64 = "https://javadl.oracle.com/webapps/download/GetFile/10.0.2+13/19aef61b38124481863b1413dce1855f/windows-i586/jdk-10.0.2_windows-x64_bin.exe"
 
 # Office 2013 ODT
