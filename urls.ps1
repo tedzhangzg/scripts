@@ -1,5 +1,12 @@
-# Script
-# URL References
+# urls.ps1
+# ==================================================
+# Description
+# ==================================================
+# Usage
+# ==================================================
+
+
+# Write-Host "Starting urls.ps1 ..."
 
 # To download and include
 # Invoke-Expression $($(Invoke-WebRequest "https://raw.githubusercontent.com/tedzhangzg/scripts/main/urls.ps1" -UseBasicParsing).Content)
@@ -125,8 +132,12 @@ $url_msaccessdbengine_2016_x86 = "https://download.microsoft.com/download/3/5/C/
 $url_msactscript = "https://raw.githubusercontent.com/massgravel/Microsoft-Activation-Scripts/master/MAS/All-In-One-Version-KL/MAS_AIO.cmd"
 $url_convr2v = "https://raw.githubusercontent.com/abbodi1406/C2R-R2V-AIO/master/C2R-R2V-AIO.cmd"
 
+# Write-Host ""
+
+# Write-Host "Terminating urls.ps1 ..."
+# pause
 
 
-# Appendix
-
-
+# ==================================================
+# Notes
+# ==================================================
