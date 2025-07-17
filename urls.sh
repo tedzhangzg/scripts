@@ -1,6 +1,14 @@
 #!/bin/sh
 
-# URL
+# urls.sh
+# ==================================================
+# Description
+# ==================================================
+# Usage
+# ==================================================
+
+
+# echo "Starting urls.sh ..."
 
 # Download
 # curl -L -O "https://raw.githubusercontent.com/tedzhangzg/scripts/main/urls.sh"
@@ -119,6 +127,11 @@ url_microsoft_office_2011=""
 # url_office2019="https://go.microsoft.com/fwlink/?linkid=525133"
 # url_office2016="https://go.microsoft.com/fwlink/?linkid=871743"
 
+# echo " "
+
+# echo "Terminating urls.sh ..."
 
 
-# Appendix
+# ==================================================
+# Notes
+# ==================================================
