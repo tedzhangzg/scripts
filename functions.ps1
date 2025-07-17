@@ -1,6 +1,12 @@
-# Script
-# Function References
-# new
+# functions.ps1
+# ==================================================
+# Description
+# ==================================================
+# Usage
+# ==================================================
+
+
+# Write-Host "Starting functions.ps1 ..."
 
 # To download and include
 # Invoke-Expression $($(Invoke-WebRequest "https://raw.githubusercontent.com/tedzhangzg/scripts/main/functions.ps1" -UseBasicParsing).Content)
@@ -364,8 +370,12 @@ Function Instal-Ap($dir_installer, $install_args) {
     Write-Host "... Done Installing $dir_installer"
 }
 
+# Write-Host ""
+
+# Write-Host "Terminating functions.ps1 ..."
+# pause
 
 
-# Appendix
-
-
+# ==================================================
+# Notes
+# ==================================================
