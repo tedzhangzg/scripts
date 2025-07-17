@@ -1,5 +1,16 @@
 #!/bin/sh
-# Functions
+
+# functions.sh
+# ==================================================
+# Description
+# ==================================================
+# Usage
+# ==================================================
+
+
+# echo "Starting functions.sh ..."
+
+
 
 # Download
 # curl -L -O "https://raw.githubusercontent.com/tedzhangzg/scripts/main/functions.sh"
@@ -327,7 +338,11 @@ function dmgInstallApp() {
     echo "... Done installing $1"
 }
 
+# echo " "
+
+# echo "Terminating functions.sh ..."
 
 
-# Appendix
-
+# ==================================================
+# Notes
+# ==================================================
